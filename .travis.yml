@@ -11,9 +11,7 @@ before_install:
 before_script:
   - yarn
 script:
-  - yarn test
-before_deploy:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+  - yarn docs:build
 deploy:
   - provider: pages
     local-dir: public
