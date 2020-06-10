@@ -1,0 +1,15 @@
+{
+  "out": "doc/.vuepress/public/typedoc",
+  "mode": "file",
+  "theme": "default",
+  "exclude": [
+    "./src/controller",
+    "./src/bin",
+    "./src/init",
+    "./src/migration",
+    "./src/index.ts",
+    "./src/create-app.ts"
+  ],
+  "readme": "none",
+  "excludeExternals": true
+}

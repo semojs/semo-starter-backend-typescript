@@ -1,0 +1,10 @@
+.idea
+.vscode
+node_modules
+.DS_Store
+config/my.json
+apidoc
+config/migrationDb.json
+public
+/dist
+docs/.vuepress/public/api

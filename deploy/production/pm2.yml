@@ -1,0 +1,25 @@
+apps:
+  - script: ./dist/index.js
+    name: application
+    exec_mode: fork
+    watch: true
+    ignore_watch: ['node_modules', '.git', 'config/my.json']
+    env:
+      NODE_ENV: production
+      port: 8080
+      DEBUG: application,semo-*
+      DEBUG_HIDE_DATE: true
+      DEBUG_COLORS: true
+      DEBUG_DEPTH: 2
+  - script: npm
+    args: 'run cron'
+    name: cron
+    exec_mode: fork
+    watch: true
+    ignore_watch: ['node_modules', '.git', 'config/my.json']
+    env:
+      NODE_ENV: production
+      DEBUG: semo-*
+      DEBUG_HIDE_DATE: true
+      DEBUG_COLORS: true
+      DEBUG_DEPTH: 2

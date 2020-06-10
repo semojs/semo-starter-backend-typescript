@@ -1,0 +1,13 @@
+const path = require('path');
+
+const SequelizeOps = process.argv.slice(2).join(' ')
+
+// Operations with care
+if (SequelizeOps.indexOf('undo') > -1 && process.env.NODE_ENV === 'production') {
+  throw new Error('Sequelize undo disabled on production')
+}
+
+module.exports = {
+  'config': path.resolve('config.db.js'),
+  'migrations-path': path.resolve('dist/migration'),
+}

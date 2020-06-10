@@ -1,0 +1,9 @@
+{
+  "name": "Semo Backend Starter",
+  "description": "一个 Node.js 后端脚手架",
+  "title": "Semo 后端脚手架",
+  "url" : "/api",
+  "template": {
+    "withCompare": false
+  }
+}

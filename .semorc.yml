@@ -1,0 +1,43 @@
+--disable-global-plugin: true
+--disable-home-plugin: true
+
+hook: true
+typescript: true
+
+commandDir: dist/bin/semo/commands
+commandMakeDir: src/bin/semo/commands
+cronDir: dist/bin/semo/crons
+cronMakeDir: src/bin/semo/crons
+pluginDir: dist/bin/semo/plugins
+pluginMakeDir: src/bin/semo/plugins
+extendDir: dist/bin/semo/extends
+extendMakeDir: src/bin/semo/extends
+scriptDir: dist/bin/semo/scripts
+scriptMakeDir: src/bin/semo/scripts
+hookDir: dist/bin/semo/hooks
+hookMakeDir: src/bin/semo/hooks
+migrationDir: dist/migration
+migrationMakeDir: src/migration
+modelDir: dist/model
+modelMakeDir: src/model
+controllerDir: dist/controller
+controllerMakeDir: src/controller
+
+semo-plugin-redis:
+  defaultConnection: redis
+  connection:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
+semo-plugin-sequelize:
+  defaultConnection: d8
+  connection:
+    d8:
+      host: localhost
+      port: 5432
+      username: d8
+      password: d8
+      database: d8
+      dialect: postgres
+      prefix: sm_
