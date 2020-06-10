@@ -14,7 +14,8 @@ module.exports = {
     displayAllHeaders: false,
     nav: [
       { text: '首页', link: '/'},
-      { text: '指南', link: '/guide/'},
+      { text: '项目说明', link: '/business/'},
+      { text: '脚手架使用说明', link: '/guide/'},
       { text: '参考', link: `http://${host}/semo-starter-backend-typescript/typedoc/`},
       { text: '接口', link: `http://${host}/semo-starter-backend-typescript/apidoc/`},
     ],
