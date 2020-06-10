@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Helper &amp; Service | Semo 后端脚手架</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="沉淀最佳实践，减少重复投入，增加一致性。">
+    <link rel="preload" href="/semo-starter-backend-typescript/assets/css/0.styles.4094ef83.css" as="style"><link rel="preload" href="/semo-starter-backend-typescript/assets/js/app.88c84f8b.js" as="script"><link rel="preload" href="/semo-starter-backend-typescript/assets/js/2.a942fcd5.js" as="script"><link rel="preload" href="/semo-starter-backend-typescript/assets/js/17.98c838d9.js" as="script"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/10.d6851bb1.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/11.c17fc4a9.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/12.7d56e3a1.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/13.ce5d7d48.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/14.0cc73ce5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/15.6fb41209.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/16.5c7cde88.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/18.452fcdb0.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/19.d664d0fc.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/20.bc07f9d7.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/21.46d8a6a5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/22.d65e79da.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/23.e6d0009a.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/24.8ae2c0fe.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/25.5adbbfab.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/26.a4058d52.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/3.c17a78c5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/4.1a9da7e5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/5.cf5f31ee.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/6.277bb20f.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/7.0c9c1106.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/8.71e52dcc.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/9.72114ab8.js">
+    <link rel="stylesheet" href="/semo-starter-backend-typescript/assets/css/0.styles.4094ef83.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/semo-starter-backend-typescript/" class="home-link router-link-active"><!----> <span class="site-name">Semo 后端脚手架</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/semo-starter-backend-typescript/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/semo-starter-backend-typescript/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/typedoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  参考
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/apidoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  接口
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/semojs/semo-starter-backend-typescript" target="_blank" rel="noopener noreferrer" class="repo-link">
+    代码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/semo-starter-backend-typescript/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/semo-starter-backend-typescript/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/typedoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  参考
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/apidoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  接口
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/semojs/semo-starter-backend-typescript" target="_blank" rel="noopener noreferrer" class="repo-link">
+    代码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/semo-starter-backend-typescript/guide/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/semo-starter-backend-typescript/guide/quickstart/" class="sidebar-link">快速上手</a></li><li><a href="/semo-starter-backend-typescript/guide/dir/" class="sidebar-link">目录结构</a></li><li><a href="/semo-starter-backend-typescript/guide/config/" class="sidebar-link">配置管理</a></li><li><a href="/semo-starter-backend-typescript/guide/global/" class="sidebar-link">全局变量</a></li><li><a href="/semo-starter-backend-typescript/guide/error/" class="sidebar-link">异常和错误码</a></li><li><a href="/semo-starter-backend-typescript/guide/controller/" class="sidebar-link">控制器和路由管理</a></li><li><a href="/semo-starter-backend-typescript/guide/database/" class="sidebar-link">数据库和模型管理</a></li><li><a href="/semo-starter-backend-typescript/guide/helper-service/" aria-current="page" class="active sidebar-link">Helper &amp; Service</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/semo-starter-backend-typescript/guide/helper-service/#service" class="sidebar-link">Service</a></li><li class="sidebar-sub-header"><a href="/semo-starter-backend-typescript/guide/helper-service/#helper" class="sidebar-link">Helper</a></li></ul></li><li><a href="/semo-starter-backend-typescript/guide/deploy/" class="sidebar-link">项目部署</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/semo-starter-backend-typescript/topics/command/" class="sidebar-link">命令管理</a></li><li><a href="/semo-starter-backend-typescript/topics/script/" class="sidebar-link">脚本管理</a></li><li><a href="/semo-starter-backend-typescript/topics/cron/" class="sidebar-link">计划任务管理</a></li><li><a href="/semo-starter-backend-typescript/topics/model/" class="sidebar-link">模型定义</a></li><li><a href="/semo-starter-backend-typescript/topics/extend/" class="sidebar-link">扩展性</a></li><li><a href="/semo-starter-backend-typescript/topics/repl/" class="sidebar-link">REPL</a></li><li><a href="/semo-starter-backend-typescript/topics/tdd/" class="sidebar-link">单元测试</a></li><li><a href="/semo-starter-backend-typescript/topics/semo/" class="sidebar-link">Semo 用法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>社区</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/semo-starter-backend-typescript/community/contrib/" class="sidebar-link">如何贡献</a></li><li><a href="/semo-starter-backend-typescript/community/resource/" class="sidebar-link">可用资源</a></li><li><a href="/semo-starter-backend-typescript/community/qa/" class="sidebar-link">常见问题</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="helper-service"><a href="#helper-service" class="header-anchor">#</a> Helper &amp; Service</h1> <p><code>Helper</code> 建立在模型之上，根据业务进行划分，每个 Helper 可能同时读取多个数据表里的数据，在有一些框架里会称为 Repositery。<code>Service</code> 是对远程服务的封装，或者说一切没在自己管理的数据库的资源都需要封装为 Service。</p> <p>所有的 <code>Helper</code> 和 <code>Service</code> 都是通过 <code>typedi</code> 提供的依赖注入的方式进行使用的，而不是 <code>import</code> 之后直接使用。</p> <h2 id="service"><a href="#service" class="header-anchor">#</a> Service</h2> <h3 id="定义-service"><a href="#定义-service" class="header-anchor">#</a> 定义 <code>Service</code></h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Service <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'typedi'</span>
+
+@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">DemoService</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * DemoService-&gt;demoMethod
+   */</span>
+  <span class="token function">demoMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'This is a demo service'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token operator">=</span> DemoService
+</code></pre></div><p>注意到这里用了一个 <code>typedi</code> 提供的装饰器： <code>@Service()</code></p> <h3 id="使用-service"><a href="#使用-service" class="header-anchor">#</a> 使用 <code>Service</code></h3> <p>我们可以在 Controller 里使用 Service，也可以在其他比如命令行工具，或者其他 Service 中使用。注意注入 <code>Service</code> 用的是 <code>typedi</code> 的 <code>@Inject()</code> 装饰器。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Inject <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'typedi'</span>
+<span class="token keyword">import</span> DemoService <span class="token keyword">from</span> <span class="token string">'../service/DemoService'</span>
+<span class="token operator">...</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">DemoController</span> <span class="token punctuation">{</span>
+<span class="token operator">...</span>
+  @<span class="token function">Inject</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  demoService<span class="token operator">:</span> DemoService
+  <span class="token operator">...</span>
+  <span class="token keyword">async</span> <span class="token function">index</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'Hi'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="helper"><a href="#helper" class="header-anchor">#</a> Helper</h2> <h3 id="定义-helper"><a href="#定义-helper" class="header-anchor">#</a> 定义 Helper</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Service <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'typedi'</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ModelInject <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../decorator/DatabaseDecorator'</span>
+<span class="token keyword">import</span> Project <span class="token keyword">from</span> <span class="token string">'../model/Project'</span>
+
+@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ProjectHelper</span> <span class="token punctuation">{</span>
+  @<span class="token function">ModelInject</span><span class="token punctuation">(</span>Project<span class="token punctuation">)</span>
+  project<span class="token operator">:</span> <span class="token keyword">typeof</span> Project
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>可以看到这里也是用的 <code>typedi</code> 实现思路完全一样。不一样的地方是我们为了定义操作数据库的方法，需要使用 <code>Sequelize</code> 的数据模型，注意这里是如何注入的，用的是我们自定义的装饰器 <code>@ModelInject()</code>，同时为了类型提示，需要引入模型文件。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>定义装饰器是本脚手架的高级用法，具体可以看 <code>routing-controllers</code> 和 <code>typedi</code> 的文档看看，这里不做详细解释了。</p></div> <h3 id="使用-helper"><a href="#使用-helper" class="header-anchor">#</a> 使用  Helper</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">...</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ProjectHelper <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../helper/ProjectHelper'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ProjectController</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// 注入一个 Helper，这里不推荐同时注入模型</span>
+  <span class="token comment">// 控制器只跟 Helper 和 Service 交互</span>
+  @<span class="token function">Inject</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  projectHelper<span class="token operator">:</span> ProjectHelper
+<span class="token operator">...</span>
+</code></pre></div><p>这里要注意注入 Helper 和给 Helper 注入数据模型实例稍微有一些不同，如果混用会很奇怪，建议所有的数据操作都调用 Helper。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/semojs/semo-starter-backend-typescript/edit/master/doc/guide/helper-service/README.md" target="_blank" rel="noopener noreferrer">帮助改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/semo-starter-backend-typescript/guide/database/" class="prev">
+        数据库和模型管理
+      </a></span> <span class="next"><a href="/semo-starter-backend-typescript/guide/deploy/">
+        项目部署
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/semo-starter-backend-typescript/assets/js/app.88c84f8b.js" defer></script><script src="/semo-starter-backend-typescript/assets/js/2.a942fcd5.js" defer></script><script src="/semo-starter-backend-typescript/assets/js/17.98c838d9.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>异常和错误码 | Semo 后端脚手架</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="沉淀最佳实践，减少重复投入，增加一致性。">
+    <link rel="preload" href="/semo-starter-backend-typescript/assets/css/0.styles.4094ef83.css" as="style"><link rel="preload" href="/semo-starter-backend-typescript/assets/js/app.88c84f8b.js" as="script"><link rel="preload" href="/semo-starter-backend-typescript/assets/js/2.a942fcd5.js" as="script"><link rel="preload" href="/semo-starter-backend-typescript/assets/js/15.6fb41209.js" as="script"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/10.d6851bb1.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/11.c17fc4a9.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/12.7d56e3a1.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/13.ce5d7d48.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/14.0cc73ce5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/16.5c7cde88.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/17.98c838d9.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/18.452fcdb0.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/19.d664d0fc.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/20.bc07f9d7.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/21.46d8a6a5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/22.d65e79da.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/23.e6d0009a.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/24.8ae2c0fe.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/25.5adbbfab.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/26.a4058d52.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/3.c17a78c5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/4.1a9da7e5.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/5.cf5f31ee.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/6.277bb20f.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/7.0c9c1106.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/8.71e52dcc.js"><link rel="prefetch" href="/semo-starter-backend-typescript/assets/js/9.72114ab8.js">
+    <link rel="stylesheet" href="/semo-starter-backend-typescript/assets/css/0.styles.4094ef83.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/semo-starter-backend-typescript/" class="home-link router-link-active"><!----> <span class="site-name">Semo 后端脚手架</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/semo-starter-backend-typescript/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/semo-starter-backend-typescript/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/typedoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  参考
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/apidoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  接口
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/semojs/semo-starter-backend-typescript" target="_blank" rel="noopener noreferrer" class="repo-link">
+    代码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/semo-starter-backend-typescript/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/semo-starter-backend-typescript/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/typedoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  参考
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://semojs.github.io/semo-starter-backend-typescript/apidoc/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  接口
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/semojs/semo-starter-backend-typescript" target="_blank" rel="noopener noreferrer" class="repo-link">
+    代码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/semo-starter-backend-typescript/guide/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/semo-starter-backend-typescript/guide/quickstart/" class="sidebar-link">快速上手</a></li><li><a href="/semo-starter-backend-typescript/guide/dir/" class="sidebar-link">目录结构</a></li><li><a href="/semo-starter-backend-typescript/guide/config/" class="sidebar-link">配置管理</a></li><li><a href="/semo-starter-backend-typescript/guide/global/" class="sidebar-link">全局变量</a></li><li><a href="/semo-starter-backend-typescript/guide/error/" aria-current="page" class="active sidebar-link">异常和错误码</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/semo-starter-backend-typescript/guide/error/#异常定义" class="sidebar-link">异常定义</a></li><li class="sidebar-sub-header"><a href="/semo-starter-backend-typescript/guide/error/#错误码" class="sidebar-link">错误码</a></li></ul></li><li><a href="/semo-starter-backend-typescript/guide/controller/" class="sidebar-link">控制器和路由管理</a></li><li><a href="/semo-starter-backend-typescript/guide/database/" class="sidebar-link">数据库和模型管理</a></li><li><a href="/semo-starter-backend-typescript/guide/helper-service/" class="sidebar-link">Helper &amp; Service</a></li><li><a href="/semo-starter-backend-typescript/guide/deploy/" class="sidebar-link">项目部署</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/semo-starter-backend-typescript/topics/command/" class="sidebar-link">命令管理</a></li><li><a href="/semo-starter-backend-typescript/topics/script/" class="sidebar-link">脚本管理</a></li><li><a href="/semo-starter-backend-typescript/topics/cron/" class="sidebar-link">计划任务管理</a></li><li><a href="/semo-starter-backend-typescript/topics/model/" class="sidebar-link">模型定义</a></li><li><a href="/semo-starter-backend-typescript/topics/extend/" class="sidebar-link">扩展性</a></li><li><a href="/semo-starter-backend-typescript/topics/repl/" class="sidebar-link">REPL</a></li><li><a href="/semo-starter-backend-typescript/topics/tdd/" class="sidebar-link">单元测试</a></li><li><a href="/semo-starter-backend-typescript/topics/semo/" class="sidebar-link">Semo 用法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>社区</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/semo-starter-backend-typescript/community/contrib/" class="sidebar-link">如何贡献</a></li><li><a href="/semo-starter-backend-typescript/community/resource/" class="sidebar-link">可用资源</a></li><li><a href="/semo-starter-backend-typescript/community/qa/" class="sidebar-link">常见问题</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="异常和错误码"><a href="#异常和错误码" class="header-anchor">#</a> 异常和错误码</h1> <h2 id="异常定义"><a href="#异常定义" class="header-anchor">#</a> 异常定义</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// exception/Exception.ts</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token constant">ERROR_UNKNOWN</span> <span class="token punctuation">}</span> <span class="token operator">=</span> errors
+
+<span class="token keyword">class</span> <span class="token class-name">Exception</span> <span class="token keyword">extends</span> <span class="token class-name">Error</span> <span class="token punctuation">{</span>
+  code<span class="token operator">:</span> string
+  msg<span class="token operator">:</span> string
+  status<span class="token operator">:</span> number
+  <span class="token function">constructor</span> <span class="token punctuation">(</span>code<span class="token punctuation">,</span> msg <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> errMsg<span class="token punctuation">,</span> status
+    <span class="token keyword">const</span> errCode <span class="token operator">=</span> code <span class="token operator">||</span> <span class="token constant">ERROR_UNKNOWN</span> <span class="token comment">// 默认 code = 1</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>errors<span class="token punctuation">[</span>errCode<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      errMsg <span class="token operator">=</span> msg <span class="token operator">||</span> errors<span class="token punctuation">[</span>code<span class="token punctuation">]</span><span class="token punctuation">.</span>msg
+      status <span class="token operator">=</span> errors<span class="token punctuation">[</span>code<span class="token punctuation">]</span><span class="token punctuation">.</span>status
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      errMsg <span class="token operator">=</span> <span class="token string">'未知错误'</span>
+      status <span class="token operator">=</span> errors<span class="token punctuation">[</span><span class="token constant">ERROR_UNKNOWN</span><span class="token punctuation">]</span><span class="token punctuation">.</span>status
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">super</span><span class="token punctuation">(</span>errMsg<span class="token punctuation">)</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>code <span class="token operator">=</span>
+      Utils<span class="token punctuation">.</span>_<span class="token punctuation">.</span><span class="token function">chain</span><span class="token punctuation">(</span><span class="token constant">CFG</span><span class="token punctuation">.</span>serviceName<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">snakeCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">toUpper</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+      <span class="token string">'_'</span> <span class="token operator">+</span>
+      errCode
+    <span class="token keyword">this</span><span class="token punctuation">.</span>msg <span class="token operator">=</span> errMsg
+    <span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">=</span> status
+    <span class="token keyword">delete</span> <span class="token keyword">this</span><span class="token punctuation">.</span>message
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这里可以看到我们的错误码是带应用前缀的，这是因为我们在业务中往往要调用第三方服务，而第三方服务的异常，我们往往透传出去，通过带前缀的错误码可以更好的区分是哪个服务在报错。另外，可以看到我们的错误信息是从 errors 这个变量中取得，意味着在抛出异常时我们只需要知道错误码即可。</p> <p>我们这里只定义了一个 <code>Exception</code> 对象，如果你觉得有必要，也可以对异常进行分类，通过继承 <code>Exception</code> 定义一些 <code>FooException</code>, <code>BarException</code>等异常对象。</p> <h2 id="错误码"><a href="#错误码" class="header-anchor">#</a> 错误码</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// exception/errors.ts</span>
+<span class="token punctuation">{</span>
+  <span class="token constant">ERROR_UNKNOWN</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token number">1</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    status<span class="token operator">:</span> <span class="token number">500</span><span class="token punctuation">,</span>
+    msg<span class="token operator">:</span> <span class="token string">'未知错误'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token constant">ERROR_BAD_PARAMS</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token number">2</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    status<span class="token operator">:</span> <span class="token number">400</span><span class="token punctuation">,</span>
+    msg<span class="token operator">:</span> <span class="token string">'参数错误'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token constant">ERROR_TIMEOUT</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+  <span class="token number">3</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    status<span class="token operator">:</span> <span class="token number">500</span><span class="token punctuation">,</span>
+    msg<span class="token operator">:</span> <span class="token string">'请求超时'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token constant">ERROR_NOT_FOUND</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token number">4</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    status<span class="token operator">:</span> <span class="token number">429</span><span class="token punctuation">,</span>
+    msg<span class="token operator">:</span> <span class="token string">'请求过于频繁'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token constant">ERROR_FREQUENT_REQUEST</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+  <span class="token number">5</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    status<span class="token operator">:</span> <span class="token number">404</span><span class="token punctuation">,</span>
+    msg<span class="token operator">:</span> <span class="token string">'Not Found'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>重点关注以下几个方面：</p> <h3 id="错误码分区"><a href="#错误码分区" class="header-anchor">#</a> 错误码分区</h3> <p>可以看到，我们用 1 到 10 这些错误码定义一些常见错误，而用位数更多的错误码定义不同模块的错误，这样可以确保在后期添加错误码时同一类别的错误码还都是定义在一起的。这里具体是用4位还是5位或者更多位数来定义错误码看实际需要。</p> <h3 id="错误码常量"><a href="#错误码常量" class="header-anchor">#</a> 错误码常量</h3> <p>我们用 <code>Eslint</code> 对代码风格进行检查时，可能会遇到 <code>no-magic-numbers</code> 这样的错误，所以我们不建议业务中直接抛出错误码，而是抛出代表错误码的常量，代码大致如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token constant">ERROR_NOT_FOUND</span> <span class="token punctuation">}</span> <span class="token operator">=</span> errors
+<span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span><span class="token constant">ERROR_NOT_FOUND</span><span class="token punctuation">)</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>随着业务越来越复杂，错误码可能会越定义越多，后面可以分不同的文件来定义，统一通过 errors 全局变量调用。</p></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/semojs/semo-starter-backend-typescript/edit/master/doc/guide/error/README.md" target="_blank" rel="noopener noreferrer">帮助改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/semo-starter-backend-typescript/guide/global/" class="prev">
+        全局变量
+      </a></span> <span class="next"><a href="/semo-starter-backend-typescript/guide/controller/">
+        控制器和路由管理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/semo-starter-backend-typescript/assets/js/app.88c84f8b.js" defer></script><script src="/semo-starter-backend-typescript/assets/js/2.a942fcd5.js" defer></script><script src="/semo-starter-backend-typescript/assets/js/15.6fb41209.js" defer></script>
+  </body>
+</html>
