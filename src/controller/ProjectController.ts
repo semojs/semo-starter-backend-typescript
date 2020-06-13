@@ -4,6 +4,8 @@ import { Inject } from 'typedi'
 import { ProjectInfoValidation } from '../validation/ProjectValidation'
 import { ProjectHelper } from '../helper/ProjectHelper'
 
+import { Utils } from '@semo/core'
+
 const { ERROR_PROJECT_NOT_EXIST } = errors
 
 /**
@@ -39,6 +41,8 @@ export class ProjectController {
       throw new Exception(ERROR_PROJECT_NOT_EXIST)
     }
 
-    return project
+    const cleanedProject = Utils._.pick(project, ['name'])
+
+    return cleanedProject
   }
 }

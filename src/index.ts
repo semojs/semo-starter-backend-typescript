@@ -10,7 +10,7 @@ async function start () {
 
     // 一切就绪，最后启动服务
     const app = createApp()
-    let port = CFG.port
+    let port = CFG.app.port
     if (process.env.IN_K8S && parseInt(process.env.IN_K8S)) {
       port = K8S_PORT
     }

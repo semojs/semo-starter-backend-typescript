@@ -8,7 +8,7 @@ import { Utils } from '@semo/core'
  */
 export function DbInject(key = 'placeholder') {
   let instance
-  if (Utils._.isString(CFG.db)) {
+  if (Utils._.isString(CFG.app.db)) {
     instance = db
   } else {
     instance = db[key]
@@ -29,7 +29,7 @@ export function ModelInject(model, key = 'placeholder') {
   const name = Utils._.isObject(model) ? model.name : model
 
   let instance
-  if (Utils._.isString(CFG.db)) {
+  if (Utils._.isString(CFG.app.db)) {
     instance = db
   } else {
     instance = db[key]

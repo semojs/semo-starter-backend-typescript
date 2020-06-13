@@ -1,12 +1,15 @@
 import 'reflect-metadata'
 import { useKoaServer, useContainer as routingControllersUseContainer } from 'routing-controllers'
 import { Container } from 'typedi'
+import logger from 'koa-logger'
 
 routingControllersUseContainer(Container)
 
 import Koa from 'koa'
 
 const app = new Koa()
+
+app.use(logger())
 
 export = () => {
   app.proxy = true

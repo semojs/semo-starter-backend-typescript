@@ -41,3 +41,6 @@ semo-plugin-sequelize:
       database: d8
       dialect: postgres
       prefix: sm_
+      raw: true
+app:
+  port: 8080
