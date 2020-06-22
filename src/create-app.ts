@@ -24,7 +24,7 @@ export = () => {
       forbidUnknownValues: false
     },
 
-    routePrefix: '/api', // 给所有接口添加路由前缀
+    // routePrefix: '/api', // 给所有接口添加路由前缀
     controllers: [__dirname + '/controller/*'],
     middlewares: [__dirname + '/middleware/global/*']
   })

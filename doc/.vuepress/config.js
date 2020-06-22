@@ -33,7 +33,7 @@ module.exports = {
           '/guide/error/',
           '/guide/controller/',
           '/guide/database/',
-          '/guide/helper-service/',
+          '/guide/service/',
           '/guide/deploy/',
         ]
       },

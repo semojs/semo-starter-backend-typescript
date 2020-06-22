@@ -33,20 +33,7 @@ export const hook_repl: any = async () => {
 
   })
 
-  // 加载所有的 Helpers 到 REPL
-  const helpers = {}
-  Utils.glob.sync('**/*Helper.js', {
-    cwd: path.resolve(__dirname, '../../../helper')
-  }).map(helper => {
-    const helperLoaded = require(path.resolve(__dirname, '../../../helper', helper))
-
-    Utils._.each(helperLoaded, (v, k) => {
-      helpers[k] = Container.get(v)
-    })
-
-  })
-
-  return { services, helpers }
+  return { services }
 
 }
 

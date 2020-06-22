@@ -2,7 +2,7 @@ import { JsonController, Get, Param, Params } from 'routing-controllers'
 import { Inject } from 'typedi'
 
 import { ProjectInfoValidation } from '../validation/ProjectValidation'
-import { ProjectHelper } from '../helper/ProjectHelper'
+import { ProjectService } from '../service/ProjectService'
 
 import { Utils } from '@semo/core'
 
@@ -18,7 +18,7 @@ export class ProjectController {
   // 注入一个 Helper，这里不推荐同时注入模型
   // 控制器只跟 Helper 和 Service 交互
   @Inject()
-  projectHelper: ProjectHelper
+  projectService: ProjectService
 
   /**
    * @api {get} /api/project/:id 获取项目信息
@@ -36,7 +36,7 @@ export class ProjectController {
     @Param('id') id: string,
     @Params() params: ProjectInfoValidation
   ) {
-    const project = await this.projectHelper.project.findByPk(id)
+    const project = await this.projectService.project.findByPk(id)
     if (!project) {
       throw new Exception(ERROR_PROJECT_NOT_EXIST)
     }

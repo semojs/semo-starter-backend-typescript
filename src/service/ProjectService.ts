@@ -7,7 +7,7 @@ import Project from '../model/Project'
  * 项目助手类
  */
 @Service()
-export class ProjectHelper {
+export class ProjectService {
 
   /**
    * 注入的项目模型实例
