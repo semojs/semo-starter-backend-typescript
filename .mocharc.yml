@@ -1,0 +1,8 @@
+require:
+  - source-map-support/register
+  - ts-node/register
+  - espower-typescript/guess
+recursive: true
+watch-files:
+  - test/**/*.spec.ts
+extension: ts
