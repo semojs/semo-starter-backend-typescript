@@ -1,5 +1,6 @@
 import init from './init'
 import createApp from './create-app'
+import { Utils } from '@semo/core'
 
 const K8S_PORT = 8080
 
@@ -10,7 +11,8 @@ async function start () {
 
     // 一切就绪，最后启动服务
     const app = createApp()
-    let port = CFG.app.port
+    const appConfig = Utils.config('$app') || {}
+    let port = appConfig.port
     if (process.env.IN_K8S && parseInt(process.env.IN_K8S)) {
       port = K8S_PORT
     }

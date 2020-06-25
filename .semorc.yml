@@ -23,24 +23,23 @@ modelMakeDir: src/model
 controllerDir: dist/controller
 controllerMakeDir: src/controller
 
-semo-plugin-redis:
-  defaultConnection: redis
-  connection:
-    redis:
-      host: 127.0.0.1
-      port: 6379
+$plugin:
+  redis:
+    defaultConnection: redis
+    connection:
+      redis:
+        host: 127.0.0.1
+        port: 6379
 
-semo-plugin-sequelize:
-  defaultConnection: d8
-  connection:
-    d8:
-      host: localhost
-      port: 5432
-      username: d8
-      password: d8
-      database: d8
-      dialect: postgres
-      prefix: sm_
-      raw: true
-app:
-  port: 8080
+  sequelize:
+    defaultConnection: d8
+    connection:
+      d8:
+        host: localhost
+        port: 5432
+        username: d8
+        password: d8
+        database: d8
+        dialect: postgres
+        prefix: sm_
+        raw: true

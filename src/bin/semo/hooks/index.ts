@@ -33,7 +33,9 @@ export const hook_repl: any = async () => {
 
   })
 
-  return { services }
+  const CFG = Utils.config('$app')
+
+  return { services, CFG }
 
 }
 

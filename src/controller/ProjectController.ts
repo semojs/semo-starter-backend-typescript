@@ -6,6 +6,8 @@ import { ProjectService } from '../service/ProjectService'
 
 import { Utils } from '@semo/core'
 
+import errors from '../exception/errors'
+
 const { ERROR_PROJECT_NOT_EXIST } = errors
 
 /**

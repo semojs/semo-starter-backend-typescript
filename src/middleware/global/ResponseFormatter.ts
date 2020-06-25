@@ -16,7 +16,8 @@ export class ResponseFormmater implements KoaMiddlewareInterface {
    * @param next
    */
   async use (ctx: any, next: (err?: any) => Promise<any>): Promise<any> {
-    const ServicePrefix = Utils._.chain(CFG.serviceName).snakeCase() .toUpper()
+    const appConfig = Utils.config('$app') || {}
+    const ServicePrefix = Utils._.chain(appConfig.name).snakeCase() .toUpper()
     try {
       // TODO: 用装饰器实现这一功能
       ctx.json = true // 默认启用 json 格式响应，如果控制器手动关闭，则直接返回 return 的内容

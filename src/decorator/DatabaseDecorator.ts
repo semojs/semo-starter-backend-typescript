@@ -7,11 +7,12 @@ import { Utils } from '@semo/core'
  * @param key 数据库标识
  */
 export function DbInject(key = 'placeholder') {
+  const appConfig = Utils.config('$app') || {}
   let instance
-  if (Utils._.isString(CFG.app.db)) {
-    instance = db
+  if (Utils._.isString(appConfig.db)) {
+    instance = appConfig.dbInstance
   } else {
-    instance = db[key]
+    instance = appConfig.dbInstances[key]
   }
 
   return function(object, propertyName: string, index?: number) {
@@ -26,13 +27,14 @@ export function DbInject(key = 'placeholder') {
  * @param key 数据库标识
  */
 export function ModelInject(model, key = 'placeholder') {
+  const appConfig = Utils.config('$app') || {}
   const name = Utils._.isObject(model) ? model.name : model
 
   let instance
-  if (Utils._.isString(CFG.app.db)) {
-    instance = db
+  if (Utils._.isString(appConfig.db)) {
+    instance = appConfig.dbInstance
   } else {
-    instance = db[key]
+    instance = appConfig.dbInstances[key]
   }
 
   return function(object, propertyName: string, index?: number) {
