@@ -6,7 +6,7 @@ import { Utils } from '@semo/core'
  *
  * @param key 数据库标识
  */
-export const ConfigInject = (key = 'placeholder', defaultValue) => {
+export const Config = (key = 'placeholder', defaultValue) => {
   const appConfig = Utils.config('$app') || {}
   const getConfig = Utils._.get(appConfig, key, defaultValue)
 

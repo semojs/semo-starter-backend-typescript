@@ -33,9 +33,8 @@ export const hook_repl: any = async () => {
 
   })
 
-  const CFG = Utils.config('$app')
-
-  return { services, CFG }
+  const appConfig = Utils.config('$app') || {}
+  return { applicaton: { services, config: appConfig, database: Container.get('databaseInstance') } }
 
 }
 
@@ -52,8 +51,10 @@ export const hook_cron_setup: any = async () => {
  * 为计划任务进行统一初始化
  */
 export const hook_cron_redis_lock: any = async () => {
+  const appConfig = Utils.config('$app') || {}
   let lock, unlock
-  if (redis.defaultConnection) {
+
+  if (appConfig.redis) {
     const redisInstance = await redis.load('redis')
 
     // Redis锁，加锁

@@ -1,6 +1,6 @@
 import { JsonController, Get } from 'routing-controllers'
 import { Inject } from 'typedi'
-import { ConfigInject } from '../decorator/ConfigDecorator'
+import { Config } from '../decorator/ConfigDecorator'
 import DemoService from '../service/DemoService'
 
 /**
@@ -13,7 +13,7 @@ export class DemoController {
   @Inject()
   demoService: DemoService
 
-  @ConfigInject('c.d', 5678)
+  @Config('c.d', 5678)
   public port: string
 
   /**

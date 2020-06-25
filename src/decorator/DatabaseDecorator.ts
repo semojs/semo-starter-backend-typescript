@@ -6,18 +6,12 @@ import { Utils } from '@semo/core'
  *
  * @param key 数据库标识
  */
-export function DbInject(key = 'placeholder') {
-  const appConfig = Utils.config('$app') || {}
-  let instance
-  if (Utils._.isString(appConfig.db)) {
-    instance = appConfig.dbInstance
-  } else {
-    instance = appConfig.dbInstances[key]
-  }
+export function DbInject() {
+  const instance = Container.get('databaseInstance')
 
   return function(object, propertyName: string, index?: number) {
-    Container.registerHandler({ object, propertyName, index, value: containerInstance => instance });
-  };
+    Container.registerHandler({ object, propertyName, index, value: containerInstance => instance })
+  }
 }
 
 /**
@@ -27,17 +21,10 @@ export function DbInject(key = 'placeholder') {
  * @param key 数据库标识
  */
 export function ModelInject(model, key = 'placeholder') {
-  const appConfig = Utils.config('$app') || {}
   const name = Utils._.isObject(model) ? model.name : model
-
-  let instance
-  if (Utils._.isString(appConfig.db)) {
-    instance = appConfig.dbInstance
-  } else {
-    instance = appConfig.dbInstances[key]
-  }
+  const instance: any = Container.get('databaseInstance')
 
   return function(object, propertyName: string, index?: number) {
-    Container.registerHandler({ object, propertyName, index, value: containerInstance => instance.models[name] });
+    Container.registerHandler({ object, propertyName, index, value: containerInstance => instance.models[name] })
   };
 }
