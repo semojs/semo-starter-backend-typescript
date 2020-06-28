@@ -20,6 +20,6 @@ export class ProjectService {
    * @param id Project ID
    */
   async demoHelper(id: number) {
-    return 'demo data'
+    return 'demo data3'
   }
 }

@@ -21,13 +21,13 @@
     "sequelize": "sequelize",
     "db:migrate": "npm run sequelize db:migrate",
     "cron": "DEBUG=application,semo-* semo cron",
-    "dts": "npx semo make dts"
+    "semo": "npx semo"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@semo/cli": "0.10.11",
-    "@semo/core": "0.10.9",
+    "@semo/cli": "0.10.14",
+    "@semo/core": "0.10.14",
     "class-transformer": "0.2.3",
     "class-validator": "0.12.2",
     "kcors": "^2.2.2",
@@ -38,11 +38,11 @@
     "moment": "^2.27.0",
     "reflect-metadata": "0.1.13",
     "routing-controllers": "0.9.0-alpha.4",
-    "semo-plugin-application": "0.10.9",
+    "semo-plugin-application": "0.10.14",
     "semo-plugin-cron": "0.1.5",
-    "semo-plugin-hook": "0.10.9",
+    "semo-plugin-hook": "0.10.14",
     "semo-plugin-redis": "0.0.13",
-    "semo-plugin-script": "0.10.9",
+    "semo-plugin-script": "0.10.14",
     "semo-plugin-sequelize": "0.2.4",
     "sequelize-cli": "6.1.0",
     "typedi": "0.8.0"

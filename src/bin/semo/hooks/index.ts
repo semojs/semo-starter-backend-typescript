@@ -9,7 +9,7 @@ import { Container } from 'typedi'
  * Implementation of hook_repl
  * 为 REPL 注入初始化环境
  */
-export const hook_repl: any = async () => {
+export const hook_repl: any = async (data, options: any) => {
   await init()
 
   // 加载所有的 Service 到 REPL
@@ -17,7 +17,13 @@ export const hook_repl: any = async () => {
   Utils.glob.sync('*Service.js', {
     cwd: path.resolve(__dirname, '../../../service')
   }).map(service => {
-    const serviceLoaded = require(path.resolve(__dirname, '../../../service', service))
+    const servicePath = path.resolve(__dirname, '../../../service', service)
+
+    if (options.reload && require.cache[servicePath]) {
+      delete require.cache[servicePath]
+    }
+
+    const serviceLoaded = require(servicePath)
     Utils._.each(serviceLoaded, (v, k) => {
       services[k] = Container.get(v)
     })
