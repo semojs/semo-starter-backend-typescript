@@ -1,11 +1,11 @@
 import { JsonController, Get, Param, Params } from 'routing-controllers'
 import { Inject } from 'typedi'
+import { Utils } from '@semo/core'
 
 import { ProjectInfoValidation } from '../validation/ProjectValidation'
 import { ProjectService } from '../service/ProjectService'
 
-import { Utils } from '@semo/core'
-
+import Exception from '../exception/Exception'
 import errors from '../exception/errors'
 
 const { ERROR_PROJECT_NOT_EXIST } = errors

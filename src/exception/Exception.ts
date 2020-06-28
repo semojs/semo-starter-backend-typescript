@@ -1,5 +1,6 @@
 import { Utils } from '@semo/core'
 import errors from '../exception/errors'
+import { ApplicationConfig } from '../decorator/ConfigDecorator'
 
 const { ERROR_UNKNOWN } = errors
 
@@ -10,6 +11,10 @@ const { ERROR_UNKNOWN } = errors
  * 本框架引入的一些第三方包定义其他异常类不遵循这个规范
  */
 class Exception extends Error {
+
+  @ApplicationConfig('serviceName', 'app')
+  serviceName
+
   /**
    * 错误码
    */
@@ -46,7 +51,7 @@ class Exception extends Error {
     super(errMsg)
 
     this.code =
-      Utils._.chain(CFG.serviceName)
+      Utils._.chain(this.serviceName)
         .snakeCase()
         .toUpper() +
       '_' +

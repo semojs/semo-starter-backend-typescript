@@ -1,5 +1,2 @@
 name: 'backend-starter'
 port: 4321
-
-c:
-  d: e

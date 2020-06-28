@@ -1,6 +1,8 @@
 import { Utils } from '@semo/core'
 
 import { Middleware, KoaMiddlewareInterface, BadRequestError } from 'routing-controllers'
+
+import Exception from '../../exception/Exception'
 import errors from '../../exception/errors'
 const { ERROR_UNKNOWN, ERROR_BAD_PARAMS } = errors
 
@@ -70,17 +72,8 @@ export class ResponseFormmater implements KoaMiddlewareInterface {
           code: `${ServicePrefix}_1`,
           msg: '未知错误'
         }
-        // 未知错误通过sentry告知项目负责人
-        if (CFG.sentryDSN && process.env.NODE_ENV === 'production') {
-          Raven.captureException(e, { req: ctx.request }, (sendErr, eventId) => {
-            if (sendErr) {
-              console.error('Failed to send to Sentry')
-            } else {
-              console.log(`Sentry event id: ${eventId}`)
-            }
-          })
-        }
       }
+
       if (process.env.NODE_ENV !== 'production' && e) {
         ctx.body.stack = e.stack // 调用栈返给前端
       }

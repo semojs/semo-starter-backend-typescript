@@ -937,44 +937,18 @@
   dependencies:
     debug "^4.1.1"
 
-"@semo/cli@0.10.8":
-  version "0.10.8"
-  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-0.10.8.tgz#95bcbfd766aa9e9ba3dece9b677152572f7b286f"
-  integrity sha512-Y73K7IDNUk7I6Vmak8WgPA6WH4y3J4YdMJHjw7R0vQpoOLW1i1PEFL5ArZtzUeCkrwRjiTduRQkgLV3KRKBpbA==
+"@semo/cli@0.10.11":
+  version "0.10.11"
+  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-0.10.11.tgz#2b8469fbedee52e76b8fe4a11355a1197b710216"
+  integrity sha512-hgmbx4KPG/ItyDbf1dx3QhGhqRdCqrQXxsayilWeICGbWIborZQ0slvrH+mGmZTmPoHjNNN52FK2EJ5y5XGi9w==
   dependencies:
-    "@semo/core" "^0.10.8"
+    "@semo/core" "^0.10.9"
     rimraf "^3.0.2"
 
-"@semo/core@0.10.8", "@semo/core@^0.10.8":
-  version "0.10.8"
-  resolved "https://registry.yarnpkg.com/@semo/core/-/core-0.10.8.tgz#a540a9324481a0bf0ba2e978714aeb8bda0a083d"
-  integrity sha512-BJhFAcuW5EJHkVu6ZYRZzBLDAzj/4b4pD2vUzxvrUIFxwN10H6fiBgYh+3xZJYeI3JEb8pLKWNA6Ky6QeYjPsw==
-  dependencies:
-    chalk "^4.1.0"
-    dayjs "^1.8.28"
-    debug "^4.1.1"
-    envinfo "^7.5.1"
-    find-up "^4.1.0"
-    fs-extra "^9.0.1"
-    fuzzy "^0.1.3"
-    get-stdin "^8.0.0"
-    glob "^7.1.6"
-    inquirer "^7.1.0"
-    json-colorizer "^2.2.2"
-    json-stringify-pretty-compact "^2.0.0"
-    lodash "^4.17.15"
-    node-cache "^5.1.1"
-    node-object-hash "^2.0.0"
-    shelljs "^0.8.4"
-    table "^5.4.6"
-    update-notifier "^4.1.0"
-    yaml "^1.10.0"
-    yargs "^15.3.1"
-
-"@semo/core@^0.10.6":
-  version "0.10.6"
-  resolved "https://registry.yarnpkg.com/@semo/core/-/core-0.10.6.tgz#ade2203d918e136b60bbf28f7dc76e4a852a6bd7"
-  integrity sha512-3hNtmPKwQKdkasfxc2iZAYeY2gdqvSyixn7UutN8ZijmHQ2lKYgr0a35Ek87hsE/FXNlMWRrbW+qTIB1RBjTtA==
+"@semo/core@0.10.9", "@semo/core@^0.10.9":
+  version "0.10.9"
+  resolved "https://registry.yarnpkg.com/@semo/core/-/core-0.10.9.tgz#05d960a9b1c15d1de104904601239b2faf152c33"
+  integrity sha512-LYh75qv3bBgy9ws78yq5FJPGAdNojV0yt6W041XKY1FyIExgvMZBdKqyfMVFG28MoC1a+2vbYpviF4Fw3993Cg==
   dependencies:
     chalk "^4.1.0"
     dayjs "^1.8.28"
@@ -4267,10 +4241,10 @@ eslint-plugin-es@^3.0.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-import@^2.21.2:
-  version "2.21.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.21.2.tgz#8fef77475cc5510801bedc95f84b932f7f334a7c"
-  integrity sha512-FEmxeGI6yaz+SnEB6YgNHlQK1Bs2DKLM+YF+vuTk5H8J9CLbJLtlPvRFgZZ2+sXiKAlN5dpdlrWOjK8ZoZJpQA==
+eslint-plugin-import@^2.22.0:
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.22.0.tgz#92f7736fe1fde3e2de77623c838dd992ff5ffb7e"
+  integrity sha512-66Fpf1Ln6aIS5Gr/55ts19eUuoDhAbZgnr6UxK5hbDx6l/QgQgx61AePq+BV4PP2uXQFClgMVzep5zZ94qqsxg==
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flat "^1.2.3"
@@ -9577,12 +9551,12 @@ selfsigned@^1.10.7:
   dependencies:
     node-forge "0.9.0"
 
-semo-plugin-application@0.10.8:
-  version "0.10.8"
-  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-0.10.8.tgz#5e2869ad2c78a4c548390b27bef62179a2b35b75"
-  integrity sha512-vem2AdC+LUWpTtKj9nML9yzVAbsBu7PjihH5b9BQUjcydATFVTdVMMPfKEVzX8xGuwTiI8ZlnDgy+itvlqZbCw==
+semo-plugin-application@0.10.9:
+  version "0.10.9"
+  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-0.10.9.tgz#a557eaecfcea244720314260e866cc5decad2fc7"
+  integrity sha512-1xv24NrrmN1OxE2eXIgTdqzx2fyiWroZPDFNdzt6kVTVPxXEdQ+lVI9EX4qnGCpMGPHrnSNKGykub2ZUEFb8xQ==
   dependencies:
-    "@semo/core" "^0.10.8"
+    "@semo/core" "^0.10.9"
 
 semo-plugin-cron@0.1.5:
   version "0.1.5"
@@ -9592,12 +9566,12 @@ semo-plugin-cron@0.1.5:
     "@semo/core" "^0.6.7"
     node-cron "^2.0.3"
 
-semo-plugin-hook@0.10.8:
-  version "0.10.8"
-  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-0.10.8.tgz#1f1916ca4a4fbdaecd67871b98ac342f1a636877"
-  integrity sha512-K0Ve4NRQtvDufrE9AmnIvhAwJz7AyS0hqhIcAO7t2iGHlVqv12sek0GBhe54r3b1oK4QlmO86VWXd7WbP25yyA==
+semo-plugin-hook@0.10.9:
+  version "0.10.9"
+  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-0.10.9.tgz#13c3f3e7bc8de2c81adf70f9ba291ee09dab44f5"
+  integrity sha512-qYKLVNE+v0/NTkqb5gScDl1jhnrbbhuTNlrazVKx4v0u5B+NlnPXamxjzbOP3+kLeT6tw26V+XNVtQVW+fcwRg==
   dependencies:
-    "@semo/core" "^0.10.8"
+    "@semo/core" "^0.10.9"
 
 semo-plugin-redis@0.0.13:
   version "0.0.13"
@@ -9607,25 +9581,25 @@ semo-plugin-redis@0.0.13:
     "@semo/core" "^0.6.7"
     ioredis "^4.17.3"
 
-semo-plugin-script@0.10.8:
-  version "0.10.8"
-  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-0.10.8.tgz#2a8d1f21c17f5b675e64200013accf527bec1750"
-  integrity sha512-jkp2NMZnBGAfAToElhUcqNrgBdfgxoB9sbbrpLmjZCcRiX9o7EpTybnm9krAWRs0MKITwRQfleJgRrxu4w4GzA==
+semo-plugin-script@0.10.9:
+  version "0.10.9"
+  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-0.10.9.tgz#f65b04f5b1ca16a8b0dcce005c9d15b7a00d0f7d"
+  integrity sha512-t1fLuPJy4QItiI7nGLmNOOpwTbR1lyb1VsmC2huTAaAqnn0yULNpb1/PXAuWWyvvToDXC/TU0U4cz7Wbr5lRjA==
   dependencies:
-    "@semo/core" "^0.10.8"
+    "@semo/core" "^0.10.9"
 
-semo-plugin-sequelize@0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/semo-plugin-sequelize/-/semo-plugin-sequelize-0.2.3.tgz#d4a1f27cf5042b2404828e4863dcee70a81a534e"
-  integrity sha512-UhIPl52QXex4faesfHjloGhTMJjGwdc2t3KegCvu8HNE0nLqIrVPFZoHeaR7qvUTUz2UZNVk0hlnk58MkMpEAA==
+semo-plugin-sequelize@0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/semo-plugin-sequelize/-/semo-plugin-sequelize-0.2.4.tgz#676a15828719a82589f8464228537cd958091a3b"
+  integrity sha512-jXeqzSfiSi9GzNlxV+Xd3CFiIglre7wtgt6udqzHYoxToxxOaeFnFF+HbPAr4OALUj+SwHghG+D2Kl7Qj6/4HA==
   dependencies:
-    "@semo/core" "^0.10.6"
+    "@semo/core" "^0.10.9"
     js-beautify "^1.11.0"
     mysql2 "^2.1.0"
     node-sqlparser "^1.0.4"
     pg "^8.2.1"
     pg-hstore "^2.3.3"
-    sequelize "^6.1.0"
+    sequelize "^6.2.2"
     sqlite3 "^4.2.0"
     tosource "^2.0.0-alpha.2"
 
@@ -9690,10 +9664,10 @@ seq-queue@^0.0.5:
   resolved "https://registry.yarnpkg.com/seq-queue/-/seq-queue-0.0.5.tgz#d56812e1c017a6e4e7c3e3a37a1da6d78dd3c93e"
   integrity sha1-1WgS4cAXpuTnw+Ojeh2m143TyT4=
 
-sequelize-cli@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/sequelize-cli/-/sequelize-cli-6.0.0.tgz#2dc960459ae64d8555f258bf3cc6aa9876377e07"
-  integrity sha512-DhZ6QwBJR5VXjM5VFt49H+SbNCdJhfjW5seQyqvJA92te+w19lZBIRlKC42LtUnhLf3rBDn8Be3CSuT6reonbg==
+sequelize-cli@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/sequelize-cli/-/sequelize-cli-6.1.0.tgz#aa03e48988f1943734286277e4b5af7ce6ce3445"
+  integrity sha512-Bb49bdnd3K+YycGh+nYtTj6Zp4+6/cxlf8UJi8toQ28ff2b7mnqzjFPvNCuHB3frdimT8X1PeTU9Z/JUtRnEaA==
   dependencies:
     cli-color "^1.4.0"
     fs-extra "^7.0.1"
@@ -9708,10 +9682,10 @@ sequelize-pool@^6.0.0:
   resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-6.0.0.tgz#2b2f6570fb633ecb38a338c4fc266c0e42ce2af7"
   integrity sha512-D/VfOX2Z+6JTWqM73lhcqMXp1X4CeqRNVMlndvbOMtyjFAZ2kYzH7rGFGFrLO1r+RZQdc/h+3zQL4nd3cclNLg==
 
-sequelize@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-6.1.0.tgz#576eb95709142dbc96f4a8f2b166932cc2781f8d"
-  integrity sha512-8x603RQrj14QZ4dGpsYPMr3YGqsihNX9WPclNN83prwrhHAJH9LHfOG/pK2XUdrwYtbRz+2a7xKXK7rVdw3P2A==
+sequelize@^6.2.2:
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-6.2.3.tgz#27744a198b59d9e5de70e859215e0d66bcb2ef86"
+  integrity sha512-coYFfKVpN8E6Vet5wuj3Rj5GZH217QTM5ewQ54R3EalStDFk194nS/ZNFXOh2gz+Zc98+D0aIQcp6YB8hpZe7Q==
   dependencies:
     debug "^4.1.1"
     dottie "^2.0.0"

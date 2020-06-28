@@ -1,7 +1,7 @@
 import { JsonController, Get } from 'routing-controllers'
 import { Inject } from 'typedi'
-import { Config } from '../decorator/ConfigDecorator'
 import DemoService from '../service/DemoService'
+import { ApplicationConfig } from '../decorator/ConfigDecorator'
 
 /**
  * @apiDefine DemoGroupName 示例分组
@@ -13,7 +13,7 @@ export class DemoController {
   @Inject()
   demoService: DemoService
 
-  @Config('c.d', 5678)
+  @ApplicationConfig('port', 3000)
   public port: string
 
   /**

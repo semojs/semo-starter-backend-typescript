@@ -10,7 +10,7 @@ import { Model } from 'sequelize'
  */
 class Project extends Model {
   /**
-   * 项目 ID
+   * ID xxxx
    */
   id: number
 
@@ -42,7 +42,6 @@ class Project extends Model {
    * **必须是静态方法**
    */
   static associate () {
-    console.log('123')
     console.log('I will do model relations association!')
   }
 }

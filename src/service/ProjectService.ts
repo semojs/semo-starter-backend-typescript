@@ -13,7 +13,7 @@ export class ProjectService {
    * 注入的项目模型实例
    */
   @ModelInject(Project)
-  project: typeof Project
+  project: Project & typeof Project
 
   /**
    * 示例方法
