@@ -24,6 +24,9 @@ controllerDir: dist/controller
 controllerMakeDir: src/controller
 
 $plugin:
+  semo:
+    extract:
+      - Semo.hooks.application.services
   redis:
     defaultConnection: redis
     connection:

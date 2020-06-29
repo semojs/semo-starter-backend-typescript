@@ -40,7 +40,7 @@ export const hook_repl: any = async (data, options: any) => {
   })
 
   const appConfig = Utils.config('$app') || {}
-  return { applicaton: { services, config: appConfig, database: Container.get('databaseInstance') } }
+  return { services, config: appConfig, database: Container.get('databaseInstance') } 
 
 }
 

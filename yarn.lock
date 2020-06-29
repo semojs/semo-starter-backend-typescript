@@ -937,18 +937,18 @@
   dependencies:
     debug "^4.1.1"
 
-"@semo/cli@0.10.14":
-  version "0.10.14"
-  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-0.10.14.tgz#154366000a009c9e44bcd497cb718f7fb7e49a38"
-  integrity sha512-Nndgt2jEjDm4l/C199Ygn6h/vGmUomd8psGGR0Pb9ZPlIUfPtwRamescRwgLS0VrmV6P/3qIvobJ6cXZuKfXGg==
+"@semo/cli@0.11.0":
+  version "0.11.0"
+  resolved "https://registry.npm.taobao.org/@semo/cli/download/@semo/cli-0.11.0.tgz#1fb75812c27c3c3824f03a6ba0be2949fc736e75"
+  integrity sha1-H7dYEsJ8PDgk8DproL4pSfxzbnU=
   dependencies:
-    "@semo/core" "^0.10.14"
+    "@semo/core" "^0.11.0"
     rimraf "^3.0.2"
 
-"@semo/core@0.10.14", "@semo/core@^0.10.14":
-  version "0.10.14"
-  resolved "https://registry.yarnpkg.com/@semo/core/-/core-0.10.14.tgz#8e1536559f082af88080d9a2f5aeeeaf6cf29632"
-  integrity sha512-ZfKo9RdTgygpcEo5FjU51uKLDukwGh0N4sTljqaG0bRFU+Y1rWETAqoKtyTNaT9yeJBolbQJ481lXMnW6atw0w==
+"@semo/core@0.11.0", "@semo/core@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.npm.taobao.org/@semo/core/download/@semo/core-0.11.0.tgz#9a43dbdbbdd161a6bc55f98dd0b9eddd86605c9a"
+  integrity sha1-mkPb273RYaa8VfmN0Lnt3YZgXJo=
   dependencies:
     chalk "^4.1.0"
     dayjs "^1.8.28"
@@ -9577,12 +9577,12 @@ selfsigned@^1.10.7:
   dependencies:
     node-forge "0.9.0"
 
-semo-plugin-application@0.10.14:
-  version "0.10.14"
-  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-0.10.14.tgz#42dece37843e3da27eb1653934dd0275c965f176"
-  integrity sha512-f6kOFnBMsn0kl1oNLnJko10SBTwhIjlJVfLsghRv+haU8Aukm6adAASyNTDhmvhz/BjVM5VYrY4ZZ11P3zETcQ==
+semo-plugin-application@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.npm.taobao.org/semo-plugin-application/download/semo-plugin-application-0.11.0.tgz#5e88167c9888b8fc27744cef0f62d7004acab964"
+  integrity sha1-XogWfJiIuPwndEzvD2LXAErKuWQ=
   dependencies:
-    "@semo/core" "^0.10.14"
+    "@semo/core" "^0.11.0"
 
 semo-plugin-cron@0.1.5:
   version "0.1.5"
@@ -9592,12 +9592,12 @@ semo-plugin-cron@0.1.5:
     "@semo/core" "^0.6.7"
     node-cron "^2.0.3"
 
-semo-plugin-hook@0.10.14:
-  version "0.10.14"
-  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-0.10.14.tgz#c013badced2d122696a5a4ac208aac96cc47a36b"
-  integrity sha512-//gyeZbFI6P1GhJtwdIttLpofUo+09eCa+K1EjDi4pPwxjeK3SZLWcFKLQC5f2HFDR1I+pzA09KB083XYSDytA==
+semo-plugin-hook@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.npm.taobao.org/semo-plugin-hook/download/semo-plugin-hook-0.11.0.tgz#451cc2d2060ee25c0477cbd79a4e9127d1c920f1"
+  integrity sha1-RRzC0gYO4lwEd8vXmk6RJ9HJIPE=
   dependencies:
-    "@semo/core" "^0.10.14"
+    "@semo/core" "^0.11.0"
 
 semo-plugin-redis@0.0.13:
   version "0.0.13"
@@ -9607,12 +9607,12 @@ semo-plugin-redis@0.0.13:
     "@semo/core" "^0.6.7"
     ioredis "^4.17.3"
 
-semo-plugin-script@0.10.14:
-  version "0.10.14"
-  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-0.10.14.tgz#45f91c4680bab932e74ea1cc012d58a30a49e2b8"
-  integrity sha512-hTqfLgbIelIonwEk2EFKeyMC8dEzdKVUsL3oYcWTxFc/tN0wj/mWBiRZhaaQPWRm2mqK+N27R3VvAiudJQOf8Q==
+semo-plugin-script@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.npm.taobao.org/semo-plugin-script/download/semo-plugin-script-0.11.0.tgz#e2edc383859e68a4453bb44286846e7eb1182f78"
+  integrity sha1-4u3Dg4WeaKRFO7RChoRufrEYL3g=
   dependencies:
-    "@semo/core" "^0.10.14"
+    "@semo/core" "^0.11.0"
 
 semo-plugin-sequelize@0.2.4:
   version "0.2.4"
@@ -10887,17 +10887,17 @@ typedi@0.8.0:
   resolved "https://registry.yarnpkg.com/typedi/-/typedi-0.8.0.tgz#d8e203bd1d41a96e2b0a5c6295147d74b2b2d03e"
   integrity sha512-/c7Bxnm6eh5kXx2I+mTuO+2OvoWni5+rXA3PhXwVWCtJRYmz3hMok5s1AKLzoDvNAZqj/Q/acGstN0ri5aQoOA==
 
-typedoc-default-themes@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/typedoc-default-themes/-/typedoc-default-themes-0.10.1.tgz#eb27b7d689457c7ec843e47ec0d3e500581296a7"
-  integrity sha512-SuqAQI0CkwhqSJ2kaVTgl37cWs733uy9UGUqwtcds8pkFK8oRF4rZmCq+FXTGIb9hIUOu40rf5Kojg0Ha6akeg==
+typedoc-default-themes@^0.10.2:
+  version "0.10.2"
+  resolved "https://registry.npm.taobao.org/typedoc-default-themes/download/typedoc-default-themes-0.10.2.tgz#743380a80afe62c5ef92ca1bd4abe2ac596be4d2"
+  integrity sha1-dDOAqAr+YsXvksob1KvirFlr5NI=
   dependencies:
     lunr "^2.3.8"
 
-typedoc@0.17.7:
-  version "0.17.7"
-  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.17.7.tgz#70797401140403a5f91589ed3f4f24c03841bf7a"
-  integrity sha512-PEnzjwQAGjb0O8a6VDE0lxyLAadqNujN5LltsTUhZETolRMiIJv6Ox+Toa8h0XhKHqAOh8MOmB0eBVcWz6nuAw==
+typedoc@0.17.8:
+  version "0.17.8"
+  resolved "https://registry.npm.taobao.org/typedoc/download/typedoc-0.17.8.tgz#96b67e9454aa7853bfc4dc9a55c8a07adfd5478e"
+  integrity sha1-lrZ+lFSqeFO/xNyaVciget/VR44=
   dependencies:
     fs-extra "^8.1.0"
     handlebars "^4.7.6"
@@ -10908,7 +10908,7 @@ typedoc@0.17.7:
     minimatch "^3.0.0"
     progress "^2.0.3"
     shelljs "^0.8.4"
-    typedoc-default-themes "^0.10.1"
+    typedoc-default-themes "^0.10.2"
 
 typescript@3.9.5:
   version "3.9.5"

@@ -1,7 +1,7 @@
 import { JsonController, Get } from 'routing-controllers'
 import { Inject } from 'typedi'
-import DemoService from '../service/DemoService'
 import { ApplicationConfig } from '../decorator/ConfigDecorator'
+import { DemoService } from '../service/DemoService'
 
 /**
  * @apiDefine DemoGroupName 示例分组
@@ -27,6 +27,7 @@ export class DemoController {
    */
   @Get('/')
   async index () {
+    this.demoService.demoMethod(1,2)
     return this.port
     // return 'Hi' + this.demoService.demoMethod(1, 2)
   }
