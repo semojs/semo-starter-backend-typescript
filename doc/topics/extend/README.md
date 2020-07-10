@@ -38,7 +38,7 @@ exports.hook_component = {
 这样，别的逻辑在钩子被调用之后就可以拿到这个值，例如：
 
 ```js
-const { c } = Utils.invokeHook('component', {})
+const { c } = Utils.invokeHook('semo:component', {})
 ```
 
 另外，这里的钩子不仅支持纯对象，也支持函数，甚至是 Promise 函数。

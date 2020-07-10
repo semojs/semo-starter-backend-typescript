@@ -9,7 +9,7 @@ import { Container } from 'typedi'
  * Implementation of hook_repl
  * 为 REPL 注入初始化环境
  */
-export const hook_repl: any = async (data, options: any) => {
+export const hook_repl: any = new Utils.Hook('semo', async (data, options: any) => {
   await init()
 
   // 加载所有的 Service 到 REPL
@@ -40,23 +40,23 @@ export const hook_repl: any = async (data, options: any) => {
   })
 
   const appConfig = Utils.config('$app') || {}
-  return { services, config: appConfig, database: Container.get('databaseInstance') } 
+  return { services, config: appConfig, database: Container.get('databaseInstance') }
 
-}
+})
 
 /**
  * Implementation of hook_cron_setup
  * 为计划任务进行统一初始化
  */
-export const hook_cron_setup: any = async () => {
+export const hook_cron_setup: any = new Utils.Hook('semo', async () => {
   // await init()
-}
+})
 
 /**
  * Implementation of hook_cron_setup
  * 为计划任务进行统一初始化
  */
-export const hook_cron_redis_lock: any = async () => {
+export const hook_cron_redis_lock: any = new Utils.Hook('semo', async () => {
   const appConfig = Utils.config('$app') || {}
   let lock, unlock
 
@@ -88,4 +88,4 @@ export const hook_cron_redis_lock: any = async () => {
   }
 
   return { lock, unlock }
-}
+})

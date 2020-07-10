@@ -20,7 +20,7 @@ const results = await Project.findAll({})
 使用这种方式甚至不需要在初始化的时候考虑数据库，用的时候直接调用即可，一般我们推荐在命令行工具，脚本中使用这种方式。另外，整个底层环境中有多个数据库，有的后端项目是需要跨库写逻辑的，这时也可以使用这种方式。
 
 ```js
-const { sequelize } = await Utils.invokeHook('component')
+const { sequelize } = await Utils.invokeHook('semo:component')
   const { models: { Account, Profile } } = await sequelize.db.load('myDb')
 
   const account = await Account.findOne({

@@ -15,7 +15,7 @@ export = async () => {
 
   // Load Db
   appConfig.db = appConfig.db || Utils.config('$plugin.sequelize.defaultConnection')
-  const { sequelize } = await Utils.invokeHook('component')
+  const { sequelize } = await Utils.invokeHook('semo:component')
   if (Utils._.isString(appConfig.db)) {
     const databaseInstance = await sequelize.db.load(appConfig.db)
     Container.set('databaseInstance', databaseInstance)
