@@ -937,18 +937,18 @@
   dependencies:
     debug "^4.1.1"
 
-"@semo/cli@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/@semo/cli/download/@semo/cli-1.0.5.tgz#ce6125d94cbd85454885103fceb24e5367c0001b"
-  integrity sha1-zmEl2Uy9hUVIhRA/zrJOU2fAABs=
+"@semo/cli@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-1.0.7.tgz#b0b69bc60a34286ba61dc293acec9f45d710c35d"
+  integrity sha512-ihxaWR0dyjzTf2aMBvUvfAUK2pGLyu4pcHMVX1x2sluEaWKMD+XgSchj6nyZAfvqBEBoIN60nWdH0xug+eCXMw==
   dependencies:
-    "@semo/core" "^1.0.5"
+    "@semo/core" "^1.0.7"
     rimraf "^3.0.2"
 
-"@semo/core@1.0.5", "@semo/core@^1.0.3", "@semo/core@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/@semo/core/download/@semo/core-1.0.5.tgz#f524aaa065db98547cbe16d2c0693cc9eb5aba6d"
-  integrity sha1-9SSqoGXbmFR8vhbSwGk8yetaum0=
+"@semo/core@1.0.7", "@semo/core@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@semo/core/-/core-1.0.7.tgz#f8978d580bbeced591c18424809159a7ff6e3e4e"
+  integrity sha512-BuYYZxQ4xQVB/sGgdDmnj78Yg5EpL9sdBYRxv8WlLj8vAdI/mZGzB4F5qbVieo7+B4HivPUxeP4VTE1jDLtGBA==
   dependencies:
     chalk "^4.1.0"
     dayjs "^1.8.28"
@@ -975,6 +975,32 @@
   version "0.6.17"
   resolved "https://registry.yarnpkg.com/@semo/core/-/core-0.6.17.tgz#0c62c1732302697ad98d609211be5a35155d9536"
   integrity sha512-WbIAATWJpoDg9flL2+lNqp1XiDl4sOi3UrELSqH4PNSox2IobWbnWlqAXWQhBgiOqI3E0HtE7lK+zkVVgrEksA==
+  dependencies:
+    chalk "^4.1.0"
+    dayjs "^1.8.28"
+    debug "^4.1.1"
+    envinfo "^7.5.1"
+    find-up "^4.1.0"
+    fs-extra "^9.0.1"
+    fuzzy "^0.1.3"
+    get-stdin "^8.0.0"
+    glob "^7.1.6"
+    inquirer "^7.1.0"
+    json-colorizer "^2.2.2"
+    json-stringify-pretty-compact "^2.0.0"
+    lodash "^4.17.15"
+    node-cache "^5.1.1"
+    node-object-hash "^2.0.0"
+    shelljs "^0.8.4"
+    table "^5.4.6"
+    update-notifier "^4.1.0"
+    yaml "^1.10.0"
+    yargs "^15.3.1"
+
+"@semo/core@^1.0.3":
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/@semo/core/download/@semo/core-1.0.5.tgz#f524aaa065db98547cbe16d2c0693cc9eb5aba6d"
+  integrity sha1-9SSqoGXbmFR8vhbSwGk8yetaum0=
   dependencies:
     chalk "^4.1.0"
     dayjs "^1.8.28"
@@ -9613,12 +9639,12 @@ selfsigned@^1.10.7:
   dependencies:
     node-forge "0.9.0"
 
-semo-plugin-application@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/semo-plugin-application/download/semo-plugin-application-1.0.5.tgz#f41b11f491b1f9b302e23cf3d68ee521509825c5"
-  integrity sha1-9BsR9JGx+bMC4jzz1o7lIVCYJcU=
+semo-plugin-application@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-1.0.7.tgz#e931dbc2b1d85365aff6178dda0d493884d2bc92"
+  integrity sha512-VrpdskkD+YCHu1U92Wg9AA2aFZi9fFVX3AX8/NbpwGQ/woSLFy5wcb+FS1iv9UoFAUIDftr8gaYN4K105XWR+w==
   dependencies:
-    "@semo/core" "^1.0.5"
+    "@semo/core" "^1.0.7"
 
 semo-plugin-cron@0.1.5:
   version "0.1.5"
@@ -9628,12 +9654,12 @@ semo-plugin-cron@0.1.5:
     "@semo/core" "^0.6.7"
     node-cron "^2.0.3"
 
-semo-plugin-hook@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/semo-plugin-hook/download/semo-plugin-hook-1.0.5.tgz#5f44c686166d6b9c2eb50ff39d57a293d678ce6f"
-  integrity sha1-X0TGhhZta5wutQ/znVeik9Z4zm8=
+semo-plugin-hook@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-1.0.7.tgz#48d36a86dfca6c820ab3d56e825d94d9428b9f1f"
+  integrity sha512-Oie6sh3aCRoA1QeVoG8repjCGZxjv01RirC37Vmgh07V6uu9g3PZ53ec2U9ZqxMNRLDSsK2ZDMPh1C7zz9cxBw==
   dependencies:
-    "@semo/core" "^1.0.5"
+    "@semo/core" "^1.0.7"
 
 semo-plugin-redis@1.0.2:
   version "1.0.2"
@@ -9643,12 +9669,12 @@ semo-plugin-redis@1.0.2:
     "@semo/core" "^1.0.3"
     ioredis "^4.17.3"
 
-semo-plugin-script@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/semo-plugin-script/download/semo-plugin-script-1.0.5.tgz#f9df6fa6a2e1a3f2bd02727fb88e2cf5452a7bbf"
-  integrity sha1-+d9vpqLho/K9AnJ/uI4s9UUqe78=
+semo-plugin-script@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-1.0.7.tgz#9920024401e65cac98de0f6483d95a343004f1af"
+  integrity sha512-XK9+4MKKYBj7m4nSTYr2O9lpTVkRQxIiSFTy4HsD4vW5fc1s0I0aBE3fUhXhkjAb8Y7EaEUIze58J4LpAjpOqQ==
   dependencies:
-    "@semo/core" "^1.0.5"
+    "@semo/core" "^1.0.7"
 
 semo-plugin-sequelize@1.0.1:
   version "1.0.1"

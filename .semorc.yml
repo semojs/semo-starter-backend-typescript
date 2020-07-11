@@ -27,6 +27,7 @@ $plugin:
   semo:
     extract:
       - Semo.hooks.application
+      - Semo.hooks.application.models
   redis:
     defaultConnection: redis
     connection:
