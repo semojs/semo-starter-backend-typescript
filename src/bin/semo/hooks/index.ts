@@ -39,10 +39,10 @@ export const hook_repl: any = new Utils.Hook('semo', async (data, options: any) 
 
   })
 
-  const databaseInstance = Container.get('databaseInstance')
+  const databaseInstance:any = Container.get('databaseInstance')
 
   const appConfig = Utils.config('$app') || {}
-  return { models: databaseInstance, services, config: appConfig, database: Container.get('databaseInstance') }
+  return { models: databaseInstance.models, services, config: appConfig, database: Container.get('databaseInstance') }
 
 })
 
