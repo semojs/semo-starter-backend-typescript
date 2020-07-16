@@ -7,6 +7,7 @@ import { DemoServiceInterface } from './interface/DemoServiceInterface'
 @Service()
 export class DemoService implements DemoServiceInterface {
   demoMethod(a: number, b: number): number {
-    throw new Error("Method not implemented.")
+    console.log('service method called')
+    return 3
   }
 }

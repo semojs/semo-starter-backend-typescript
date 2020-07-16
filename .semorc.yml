@@ -28,15 +28,21 @@ $plugin:
     extract:
       - Semo.hooks.application
       - Semo.hooks.application.models
+      - Semo.hooks.semoPluginRedis
+      - Semo.hooks.semoPluginSequelize
+
   redis:
-    defaultConnection: redis
+    defaultConnection: redis2
     connection:
       redis:
         host: 127.0.0.1
         port: 6379
+      redis2:
+        host: 192.168.31.126
+        port: 6379
 
   sequelize:
-    defaultConnection: d8
+    defaultConnection: d9
     connection:
       d8:
         host: localhost
@@ -45,5 +51,14 @@ $plugin:
         password: d8
         database: d8
         dialect: postgres
+        prefix: sm_
+        raw: true
+      d9:
+        host: 192.168.31.126
+        port: 3306
+        username: root
+        password: root
+        database: d9
+        dialect: mysql
         prefix: sm_
         raw: true

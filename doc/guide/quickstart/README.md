@@ -72,7 +72,7 @@ yarn repl
 ### 调用各个数据库的 Sequelize 模型，查询想要的数据
 
 ```
-> const { Account } = await sequelize.db.load('db1')
+> const { Account } = await sequelize.load('db1')
 > await Account.count()
 ```
 

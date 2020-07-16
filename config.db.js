@@ -5,6 +5,5 @@
  */
 
 const { Utils } = require('@semo/core')
-const appConfig = Utils.getApplicationConfig()
-const db = appConfig.app.db || Utils._.get(appConfig, 'semo-plugin-sequelize.defaultConnection')
-module.exports = require('semo-plugin-sequelize').sequelize.db.getConfig(db)
+const db = Utils.config('app.db') || Utils.config('$plugin.sequelize.defaultConnection')
+module.exports = require('semo-plugin-sequelize').sequelize.getConfig(db)

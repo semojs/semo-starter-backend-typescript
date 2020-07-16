@@ -21,7 +21,7 @@ const results = await Project.findAll({})
 
 ```js
 const { sequelize } = await Utils.invokeHook('semo:component')
-  const { models: { Account, Profile } } = await sequelize.db.load('myDb')
+  const { models: { Account, Profile } } = await sequelize.load('myDb')
 
   const account = await Account.findOne({
     attributes: ['id'],

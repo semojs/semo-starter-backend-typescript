@@ -41,7 +41,7 @@ yarn repl # 如果全局安装了 yarn
 
 ```bash
 yarn repl --hook
->>> const { Account } = await Semo.sequelize.db.load('db1')
+>>> const { Account } = await Semo.sequelize.load('db1')
 >>> await Account.count()
 ```
 
