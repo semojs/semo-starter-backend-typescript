@@ -28,6 +28,7 @@ $plugin:
     extract:
       - Semo.hooks.application
       - Semo.hooks.application.models
+      - Semo.hooks.application.services
       - Semo.hooks.semoPluginRedis
       - Semo.hooks.semoPluginSequelize
 
