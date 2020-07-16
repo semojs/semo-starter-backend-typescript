@@ -18,5 +18,6 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true
   },
+  "include": ["./src/**/*", "./src/**/.*.json", "./src/**/*.json", "./src/**/*.yml"],
   "exclude": ["./deploy", "./doc", "./node_modules", "./dist", "./config", "./test"]
 }
