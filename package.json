@@ -22,7 +22,7 @@
     "db:migrate": "npm run sequelize db:migrate",
     "cron": "DEBUG=application,semo-* semo cron",
     "semo": "npx semo",
-    "copyfiles": "npx copyfiles -u 1 -a src/**/*.yml dist -E"
+    "copyfiles": "copyfiles -u 1 -a src/**/*.yml dist -E"
   },
   "author": "",
   "license": "ISC",

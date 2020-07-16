@@ -1,6 +1,3 @@
---disable-global-plugin: true
---disable-home-plugin: true
-
 hook: true
 typescript: true
 
@@ -23,8 +20,20 @@ modelMakeDir: src/model
 controllerDir: dist/controller
 controllerMakeDir: src/controller
 
+
+# 采用主动注册插件的方式
+$plugins:
+  redis: true
+  sequelize: true
+  application: true
+  cron: true
+  hook: true
+  script: true
+
 $plugin:
   semo:
+
+    # 给 REPL 顶层注入一些对象
     extract:
       - Semo.hooks.application
       - Semo.hooks.application.models
