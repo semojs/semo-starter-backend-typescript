@@ -48,9 +48,13 @@ $plugin:
       redis:
         host: 127.0.0.1
         port: 6379
+        db: 0
+        prefix: 'semo:'
       redis2:
         host: 192.168.31.126
         port: 6379
+        db: 0
+        prefix: 'semo:'
 
   sequelize:
     defaultConnection: d9
