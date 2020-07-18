@@ -937,18 +937,18 @@
   dependencies:
     debug "^4.1.1"
 
-"@semo/cli@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-1.3.2.tgz#e9d0f44881381770e8b45097546ca12be84e7eaa"
-  integrity sha512-xK/ZY23Y3rfQYs5PJ+n6OGACv1sz7gbyGjV32Fh+OuJGI2+4q66Rb6qoa+F/nEP4jqcW+11dvw+Kxt1DgDRZ2Q==
+"@semo/cli@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-1.4.0.tgz#012d9ecca619e554bdc8afefe52d7c43753636eb"
+  integrity sha512-/36ik0zUY+lg5//92QBhhukTRjTK+tv6QxuggILUa4e1c8x6yz3XdcmVINv3W22VwdmwkCSJGhn3ixHbKYO0pg==
   dependencies:
-    "@semo/core" "^1.3.2"
+    "@semo/core" "^1.4.0"
     rimraf "^3.0.2"
 
-"@semo/core@1.3.2", "@semo/core@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@semo/core/-/core-1.3.2.tgz#d6865ddfe1450ddb6ff85941dd8833b6a4c1fdc9"
-  integrity sha512-uB2ZNBI0dG4HAOGoIofwE7SU49Q9inGYydhl8QJD6BQaelaffeY3kQNGRa5lovzlB+6Z3NqCr+FisPpD6jmubw==
+"@semo/core@1.4.0", "@semo/core@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@semo/core/-/core-1.4.0.tgz#71dfbf67bbd90dde0d8ad0d42adb12157a45242e"
+  integrity sha512-XBAGpynGV6eBIl7uaKuglk3p73c3eBs4lH18ffKQIAztOzgzoeR81xZmDsA5YA6MDQBCimkwdl0JEVjynQWKtg==
   dependencies:
     chalk "^4.1.0"
     dayjs "^1.8.28"
@@ -9695,12 +9695,12 @@ selfsigned@^1.10.7:
   dependencies:
     node-forge "0.9.0"
 
-semo-plugin-application@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-1.3.2.tgz#4f6af11fcdb2301a81ce5ea8b587c88a6d0d034c"
-  integrity sha512-XH5qg7+LF7cj2s+fxN3XDFrrt/mxY9mVSc0+GL1Ul7DKa32qB9UU9dHVnHspPc8Dc4NadPY8S4HBo0GD/FnkIw==
+semo-plugin-application@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-1.4.0.tgz#77c4fdb839a9faff624c7e5a91c07a048d46e276"
+  integrity sha512-HIs+FVvDVpSJaNLAQqLUewogf4HxROjjXM4KlBlusCQ1Bavq8peWNd0aG9vS9/myof1hmt3Uh99B2o0iBj2uMA==
   dependencies:
-    "@semo/core" "^1.3.2"
+    "@semo/core" "^1.4.0"
 
 semo-plugin-cron@1.0.0:
   version "1.0.0"
@@ -9710,12 +9710,12 @@ semo-plugin-cron@1.0.0:
     "@semo/core" "^0.6.7"
     node-cron "^2.0.3"
 
-semo-plugin-hook@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-1.3.2.tgz#08c6b970982f7ebb1d97ce396f01f98f454904f5"
-  integrity sha512-F9k5JFLW8v8j3HMTkNzQ+UTAEXFRCipP7OYFVThL/Iit8EXlYjiG42j5/Ej3Fxxt+XEc3/qANnpZovifAnGLpA==
+semo-plugin-hook@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-1.4.0.tgz#be689ff9fe91fb6cb06764a735f60b73a18a3005"
+  integrity sha512-9of7U342R0EQRO0fdkOfwAjRViphJ1oh3mGkFAggjE+ugC/cwV4tcMoa5aJQKSAoewwgodre+bf/g+33rB86Jw==
   dependencies:
-    "@semo/core" "^1.3.2"
+    "@semo/core" "^1.4.0"
 
 semo-plugin-redis@1.0.2:
   version "1.0.2"
@@ -9725,12 +9725,12 @@ semo-plugin-redis@1.0.2:
     "@semo/core" "^1.0.3"
     ioredis "^4.17.3"
 
-semo-plugin-script@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-1.3.2.tgz#ed6eb5cdc3370c6b8f583abc6668e439cc909283"
-  integrity sha512-wXSFafgO/BCuI5hF7Q19tOL1nFW3qzAbHhIVvY9vEcBLeT4BDH5D93Ip03s2u3P2BSCOMtNO1e9+c/rMUJUgDw==
+semo-plugin-script@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-1.4.0.tgz#d1a23506b217ea7571776c4242e633e5942de315"
+  integrity sha512-pwtBTUQGiGeJpMnAFoU+7zcxToxPg8lkUpa2XzR8Lq4QCy9L6OetHOG7bq/5fPC6vt9tCS1O1ZLFbWJjvzqphA==
   dependencies:
-    "@semo/core" "^1.3.2"
+    "@semo/core" "^1.4.0"
 
 semo-plugin-sequelize@2.0.0:
   version "2.0.0"
@@ -10859,10 +10859,10 @@ triple-beam@^1.2.0, triple-beam@^1.3.0:
   resolved "https://registry.yarnpkg.com/triple-beam/-/triple-beam-1.3.0.tgz#a595214c7298db8339eeeee083e4d10bd8cb8dd9"
   integrity sha512-XrHUvV5HpdLmIj4uVMxHggLbFSZYIn7HEWsqePZcI50pco+MPqJ50wMGY794X7AOOhxOBAjbkqfAbEe/QMp2Lw==
 
-ts-node-dev@1.0.0-pre.51:
-  version "1.0.0-pre.51"
-  resolved "https://registry.npm.taobao.org/ts-node-dev/download/ts-node-dev-1.0.0-pre.51.tgz#841c41b927363bce0a630e443a7c626926636e8f"
-  integrity sha1-hBxBuSc2O84KYw5EOnxiaSZjbo8=
+ts-node-dev@1.0.0-pre.52:
+  version "1.0.0-pre.52"
+  resolved "https://registry.yarnpkg.com/ts-node-dev/-/ts-node-dev-1.0.0-pre.52.tgz#cc3a77f7956c1766a562ddcda5e96980a2671592"
+  integrity sha512-lHDVPNWNumgPFQ2cHJj8hKFp5c+JY8VyMgBTybIAkVBz5xlj/muIotuXG8Le6V1MCncZTglEVjakdxeIF/d/Xg==
   dependencies:
     chokidar "^3.4.0"
     dateformat "~1.0.4-1.2.3"
@@ -11044,10 +11044,10 @@ typedoc@0.17.8:
     shelljs "^0.8.4"
     typedoc-default-themes "^0.10.2"
 
-typescript@3.9.6:
-  version "3.9.6"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.6.tgz#8f3e0198a34c3ae17091b35571d3afd31999365a"
-  integrity sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
+typescript@3.9.7:
+  version "3.9.7"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
+  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
 tz-offset@0.0.1:
   version "0.0.1"

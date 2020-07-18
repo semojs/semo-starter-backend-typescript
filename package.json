@@ -27,8 +27,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@semo/cli": "1.3.2",
-    "@semo/core": "1.3.2",
+    "@semo/cli": "1.4.1",
+    "@semo/core": "1.4.1",
     "class-transformer": "0.2.3",
     "class-validator": "0.12.2",
     "kcors": "^2.2.2",
@@ -39,11 +39,11 @@
     "moment": "^2.27.0",
     "reflect-metadata": "0.1.13",
     "routing-controllers": "0.9.0-alpha.4",
-    "semo-plugin-application": "1.3.2",
+    "semo-plugin-application": "1.4.1",
     "semo-plugin-cron": "1.0.0",
-    "semo-plugin-hook": "1.3.2",
+    "semo-plugin-hook": "1.4.1",
     "semo-plugin-redis": "1.0.2",
-    "semo-plugin-script": "1.3.2",
+    "semo-plugin-script": "1.4.1",
     "semo-plugin-sequelize": "2.0.0",
     "sequelize-cli": "6.2.0",
     "typedi": "0.8.0"
@@ -73,9 +73,9 @@
     "source-map-support": "0.5.19",
     "supertest": "^4.0.2",
     "ts-node": "8.10.2",
-    "ts-node-dev": "1.0.0-pre.51",
+    "ts-node-dev": "1.0.0-pre.52",
     "typedoc": "0.17.8",
-    "typescript": "3.9.6",
+    "typescript": "3.9.7",
     "vuepress": "1.5.2"
   }
 }

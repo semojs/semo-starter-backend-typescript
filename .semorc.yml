@@ -23,12 +23,13 @@ controllerMakeDir: src/controller
 
 # 采用主动注册插件的方式
 $plugins:
-  redis: true
-  sequelize: true
-  application: true
-  cron: true
-  hook: true
-  script: true
+  register:
+    redis: true
+    sequelize: true
+    application: true
+    cron: true
+    hook: true
+    script: true
 
 $plugin:
   semo:
