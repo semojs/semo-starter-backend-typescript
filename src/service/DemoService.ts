@@ -1,4 +1,4 @@
-import { Service } from 'typedi'
+import { Service, Inject } from 'typedi'
 import { DemoServiceInterface } from './interface/DemoServiceInterface'
 
 /**
@@ -6,8 +6,14 @@ import { DemoServiceInterface } from './interface/DemoServiceInterface'
  */
 @Service()
 export class DemoService implements DemoServiceInterface {
-  demoMethod(a: number, b: number): number {
+
+
+  @Inject('api')
+  private api
+
+  async demoMethod(a: number, b: number): Promise<any> {
+    const res = await this.api.get('https://jsonplaceholder.typicode.com/posts/1')
     console.log('service method called')
-    return 3
+    return res
   }
 }

@@ -5,6 +5,6 @@ export interface DemoServiceInterface {
    * @param a 参数 a
    * @param b 参数 b
    */
-  demoMethod(a: number, b: number): number
+  demoMethod(a: number, b: number): Promise<any>
 }
 

@@ -24,6 +24,7 @@ controllerMakeDir: src/controller
 # 采用主动注册插件的方式
 $plugins:
   register:
+    api: true
     redis: true
     sequelize: true
     application: true
@@ -39,8 +40,8 @@ $plugin:
       - Semo.hooks.application
       - Semo.hooks.application.models
       - Semo.hooks.application.services
-      - Semo.hooks.semoPluginRedis
-      - Semo.hooks.semoPluginSequelize
+      - Semo.hooks.redis
+      - Semo.hooks.sequelize
 
   redis:
     defaultConnection: redis2

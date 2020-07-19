@@ -15,13 +15,15 @@ export = async () => {
 
   // Load Db
   appConfig.db = appConfig.db || Utils.config('$plugin.sequelize.defaultConnection')
-  const { sequelize } = await Utils.invokeHook('semo:component')
+  const { sequelize, api } = await Utils.invokeHook('semo:component')
   if (Utils._.isString(appConfig.db)) {
     const databaseInstance = await sequelize.load(appConfig.db)
     Container.set('databaseInstance', databaseInstance)
   } else {
     throw new Error('Unknow appConfig.db data type!')
   }
+
+  Container.set('api', api('application'))
 
   // addGlobalConst('API', api(CFG.serviceName))
   // const redisInstance =  await redis.load(appConfig.redis) //  If Redis server is working, you can comment out this line

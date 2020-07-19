@@ -937,18 +937,18 @@
   dependencies:
     debug "^4.1.1"
 
-"@semo/cli@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-1.4.0.tgz#012d9ecca619e554bdc8afefe52d7c43753636eb"
-  integrity sha512-/36ik0zUY+lg5//92QBhhukTRjTK+tv6QxuggILUa4e1c8x6yz3XdcmVINv3W22VwdmwkCSJGhn3ixHbKYO0pg==
+"@semo/cli@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@semo/cli/-/cli-1.4.2.tgz#969117f40d1865eeecbf29a9fe8fb4f48751b37e"
+  integrity sha512-katEtY3xA4Gzwg9uJaGwDZgbPrcBR3TbqLNqBvLvsB3DqXtzjHr0akrxiDU0+I9+KnsYBhfqDNEfiMRLXFXryA==
   dependencies:
-    "@semo/core" "^1.4.0"
+    "@semo/core" "^1.4.2"
     rimraf "^3.0.2"
 
-"@semo/core@1.4.0", "@semo/core@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@semo/core/-/core-1.4.0.tgz#71dfbf67bbd90dde0d8ad0d42adb12157a45242e"
-  integrity sha512-XBAGpynGV6eBIl7uaKuglk3p73c3eBs4lH18ffKQIAztOzgzoeR81xZmDsA5YA6MDQBCimkwdl0JEVjynQWKtg==
+"@semo/core@1.4.2", "@semo/core@^1.4.1", "@semo/core@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@semo/core/-/core-1.4.2.tgz#3185f22e20a6b775a69ee59802cf2cab356a6177"
+  integrity sha512-iyoIqgDs3qxnj99HhSS79+W9bVpYIiDV0Q6oruWVBpe5Dkiq6+cIrIuQLvyOl6tdtDidXmeu+Nd0x2hagVDIOw==
   dependencies:
     chalk "^4.1.0"
     dayjs "^1.8.28"
@@ -1742,7 +1742,7 @@ acorn@^6.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
   integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
-acorn@^7.2.0:
+acorn@^7.3.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.3.1.tgz#85010754db53c3fbaf3b9ea3e083aa5c5d147ffd"
   integrity sha512-tLc0wSnatxAQHVHUapaHdz72pi9KUyHjq5KyHjGg9Y8Ifdc79pTh2XvI6I1/chZbnM7QtNKzh66ooDogPZSleA==
@@ -1753,6 +1753,13 @@ agent-base@4, agent-base@^4.2.0, agent-base@^4.3.0:
   integrity sha512-salcGninV0nPrwpGNn4VTXBb1SOuXQBiqbrNXoeizJsHrsL6ERFM2Ne3JUSBWRE6aeNJI2ROP/WEEIDUiDe3cg==
   dependencies:
     es6-promisify "^5.0.0"
+
+agent-base@6:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.1.tgz#808007e4e5867decb0ab6ab2f928fbdb5a596db4"
+  integrity sha512-01q25QQDwLSsyfhrKbn8yuur+JNw0H+0Y4JiGIKd3z9aYk/w/2kxD/Upc+t2ZBBSUNff50VjPsSW2YxM8QYKVg==
+  dependencies:
+    debug "4"
 
 agent-base@~4.2.1:
   version "4.2.1"
@@ -2183,7 +2190,7 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha512-3YDiu347mtVtjpyV3u5kVqQLP242c06zwDOgpeRnybmXlYYsLbtTrUBUm8i8srONt+FWobl5aibnU1030PeeuA==
 
-axios@^0.19.0:
+axios@^0.19.0, axios@^0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
@@ -4384,22 +4391,22 @@ eslint-scope@^5.0.0, eslint-scope@^5.1.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-utils@^2.0.0:
+eslint-utils@^2.0.0, eslint-utils@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-2.1.0.tgz#d2de5e03424e707dc10c74068ddedae708741b27"
   integrity sha512-w94dQYoauyvlDc43XnGB8lU3Zt713vNChgt4EWwhXAP2XkBvndfxF0AgIqKOOasjPIPzj9JqgwkwbCYD0/V3Zg==
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.2.0:
+eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz#30ebd1ef7c2fdff01c3a4f151044af25fab0523e"
   integrity sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==
 
-eslint@^7.4.0:
-  version "7.4.0"
-  resolved "https://registry.npm.taobao.org/eslint/download/eslint-7.4.0.tgz?cache=0&sync_timestamp=1593807592600&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint%2Fdownload%2Feslint-7.4.0.tgz#4e35a2697e6c1972f9d6ef2b690ad319f80f206f"
-  integrity sha1-TjWiaX5sGXL51u8raQrTGfgPIG8=
+eslint@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.5.0.tgz#9ecbfad62216d223b82ac9ffea7ef3444671d135"
+  integrity sha512-vlUP10xse9sWt9SGRtcr1LAC67BENcQMFeV+w5EvLEoFe3xJ8cF1Skd0msziRx/VMC+72B4DxreCE+OR12OA6Q==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -4409,9 +4416,9 @@ eslint@^7.4.0:
     doctrine "^3.0.0"
     enquirer "^2.3.5"
     eslint-scope "^5.1.0"
-    eslint-utils "^2.0.0"
-    eslint-visitor-keys "^1.2.0"
-    espree "^7.1.0"
+    eslint-utils "^2.1.0"
+    eslint-visitor-keys "^1.3.0"
+    espree "^7.2.0"
     esquery "^1.2.0"
     esutils "^2.0.2"
     file-entry-cache "^5.0.1"
@@ -4425,7 +4432,7 @@ eslint@^7.4.0:
     js-yaml "^3.13.1"
     json-stable-stringify-without-jsonify "^1.0.1"
     levn "^0.4.1"
-    lodash "^4.17.14"
+    lodash "^4.17.19"
     minimatch "^3.0.4"
     natural-compare "^1.4.0"
     optionator "^0.9.1"
@@ -4501,14 +4508,14 @@ espower@^2.1.1:
     source-map "^0.5.0"
     type-name "^2.0.0"
 
-espree@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-7.1.0.tgz#a9c7f18a752056735bf1ba14cb1b70adc3a5ce1c"
-  integrity sha512-dcorZSyfmm4WTuTnE5Y7MEN1DyoPYy1ZR783QW1FJoenn7RailyWFsq/UL6ZAAA7uXurN9FIpYyUs3OfiIW+Qw==
+espree@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/espree/-/espree-7.2.0.tgz#1c263d5b513dbad0ac30c4991b93ac354e948d69"
+  integrity sha512-H+cQ3+3JYRMEIOl87e7QdHX70ocly5iW4+dttuR8iYSPr/hXKFb+7dBsZ7+u1adC4VrnPlTkv0+OwuPnDop19g==
   dependencies:
-    acorn "^7.2.0"
+    acorn "^7.3.1"
     acorn-jsx "^5.2.0"
-    eslint-visitor-keys "^1.2.0"
+    eslint-visitor-keys "^1.3.0"
 
 esprima@3.x.x:
   version "3.1.3"
@@ -6801,6 +6808,11 @@ lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
+lodash@^4.17.19:
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+
 log-driver@^1.2.7:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/log-driver/-/log-driver-1.2.7.tgz#63b95021f0702fedfa2c9bb0a24e7797d71871d8"
@@ -9090,7 +9102,7 @@ querystring-es3@^0.2.0, querystring-es3@^0.2.1:
   resolved "https://registry.yarnpkg.com/querystring-es3/-/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
   integrity sha1-nsYfeQSYdXB9aUFFlv2Qek1xHnM=
 
-querystring@0.2.0:
+querystring@0.2.0, querystring@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
@@ -9695,12 +9707,22 @@ selfsigned@^1.10.7:
   dependencies:
     node-forge "0.9.0"
 
-semo-plugin-application@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-1.4.0.tgz#77c4fdb839a9faff624c7e5a91c07a048d46e276"
-  integrity sha512-HIs+FVvDVpSJaNLAQqLUewogf4HxROjjXM4KlBlusCQ1Bavq8peWNd0aG9vS9/myof1hmt3Uh99B2o0iBj2uMA==
+semo-plugin-api@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/semo-plugin-api/-/semo-plugin-api-1.0.3.tgz#7817f271e186c38c369d3e485de5664015d88891"
+  integrity sha512-jsFlrlEvivVho0pqfeZF/GHBVCQRpSUA8kKwTpjVY1CKjKEUNcKgDhKToC9di3FgdAt4s40+JJSn/XLaIimzOA==
   dependencies:
-    "@semo/core" "^1.4.0"
+    "@semo/core" "^1.4.1"
+    axios "^0.19.2"
+    querystring "^0.2.0"
+    socks-proxy-agent "^5.0.0"
+
+semo-plugin-application@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/semo-plugin-application/-/semo-plugin-application-1.4.2.tgz#6053088d53f07e6bf5277cd4f93e6d8a2c6d9468"
+  integrity sha512-Fo8MZtWAP8/IR+EK9h2PvTRhKoow1oamGFnyrbawxXNOO3SoEDNhGh6YZbF6iXh8ws5pbYrdnVkK8221s9IKuw==
+  dependencies:
+    "@semo/core" "^1.4.2"
 
 semo-plugin-cron@1.0.0:
   version "1.0.0"
@@ -9710,12 +9732,12 @@ semo-plugin-cron@1.0.0:
     "@semo/core" "^0.6.7"
     node-cron "^2.0.3"
 
-semo-plugin-hook@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-1.4.0.tgz#be689ff9fe91fb6cb06764a735f60b73a18a3005"
-  integrity sha512-9of7U342R0EQRO0fdkOfwAjRViphJ1oh3mGkFAggjE+ugC/cwV4tcMoa5aJQKSAoewwgodre+bf/g+33rB86Jw==
+semo-plugin-hook@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/semo-plugin-hook/-/semo-plugin-hook-1.4.2.tgz#1788c963f261e86ca5c46f61d8850601f9bfc517"
+  integrity sha512-Ajv0owNqd/P3T3TozVdMvK0LVAV96XIIabiwGYqovSndlBWQ0TzkMpSlmjWF6l5b+Bn3oiewDJOglvHNtp9AiA==
   dependencies:
-    "@semo/core" "^1.4.0"
+    "@semo/core" "^1.4.2"
 
 semo-plugin-redis@1.0.2:
   version "1.0.2"
@@ -9725,12 +9747,12 @@ semo-plugin-redis@1.0.2:
     "@semo/core" "^1.0.3"
     ioredis "^4.17.3"
 
-semo-plugin-script@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-1.4.0.tgz#d1a23506b217ea7571776c4242e633e5942de315"
-  integrity sha512-pwtBTUQGiGeJpMnAFoU+7zcxToxPg8lkUpa2XzR8Lq4QCy9L6OetHOG7bq/5fPC6vt9tCS1O1ZLFbWJjvzqphA==
+semo-plugin-script@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/semo-plugin-script/-/semo-plugin-script-1.4.2.tgz#6bfdd8d58ec5ee0102780115cf3c78e5e19dc132"
+  integrity sha512-KEnnEUWGFlNrqSLPPi/2gmPVWfq2IxXfwep8AS4vWTOiaWq3xEA9Q9a3ZDttsrzeKgnLwywifnRIxoLnI9BKVA==
   dependencies:
-    "@semo/core" "^1.4.0"
+    "@semo/core" "^1.4.2"
 
 semo-plugin-sequelize@2.0.0:
   version "2.0.0"
@@ -10075,6 +10097,23 @@ socks-proxy-agent@^4.0.1:
   dependencies:
     agent-base "~4.2.1"
     socks "~2.3.2"
+
+socks-proxy-agent@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/socks-proxy-agent/-/socks-proxy-agent-5.0.0.tgz#7c0f364e7b1cf4a7a437e71253bed72e9004be60"
+  integrity sha512-lEpa1zsWCChxiynk+lCycKuC502RxDWLKJZoIhnxrWNjLSDGYRFflHA1/228VkRcnv9TIb8w98derGbpKxJRgA==
+  dependencies:
+    agent-base "6"
+    debug "4"
+    socks "^2.3.3"
+
+socks@^2.3.3:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/socks/-/socks-2.4.1.tgz#cea68a280a3bf7cb6333dbb40cfb243d10725e9d"
+  integrity sha512-8mWHeYC1OA0500qzb+sqwm0Hzi8oBpeuI1JugoBVMEJtJvxSgco8xFSK+NRnZcHeeWjTbF82KUDo5sXH22TY5A==
+  dependencies:
+    ip "1.1.5"
+    smart-buffer "^4.1.0"
 
 socks@~2.3.2:
   version "2.3.3"

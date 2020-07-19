@@ -27,8 +27,8 @@ export class DemoController {
    */
   @Get('/')
   async index () {
-    this.demoService.demoMethod(1,2)
-    return this.port
+    const res = await this.demoService.demoMethod(1,2)
+    return res
     // return 'Hi' + this.demoService.demoMethod(1, 2)
   }
 }
