@@ -997,58 +997,6 @@
     yaml "^1.10.0"
     yargs "^15.3.1"
 
-"@semo/core@^1.0.3":
-  version "1.0.5"
-  resolved "https://registry.npm.taobao.org/@semo/core/download/@semo/core-1.0.5.tgz#f524aaa065db98547cbe16d2c0693cc9eb5aba6d"
-  integrity sha1-9SSqoGXbmFR8vhbSwGk8yetaum0=
-  dependencies:
-    chalk "^4.1.0"
-    dayjs "^1.8.28"
-    debug "^4.1.1"
-    envinfo "^7.5.1"
-    find-up "^4.1.0"
-    fs-extra "^9.0.1"
-    fuzzy "^0.1.3"
-    get-stdin "^8.0.0"
-    glob "^7.1.6"
-    inquirer "^7.1.0"
-    json-colorizer "^2.2.2"
-    json-stringify-pretty-compact "^2.0.0"
-    lodash "^4.17.15"
-    node-cache "^5.1.1"
-    node-object-hash "^2.0.0"
-    shelljs "^0.8.4"
-    table "^5.4.6"
-    update-notifier "^4.1.0"
-    yaml "^1.10.0"
-    yargs "^15.3.1"
-
-"@semo/core@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@semo/core/-/core-1.1.0.tgz#bda22ab32896a178696454e9d3fbdba89923e85e"
-  integrity sha512-PQ5lXZ9NHeqtC1alJjWKwpftLOvJEFPQbyPFqEDL+iEyCaaiy1G5NV7xakbBwTiBzZAf6M86w2mZnYVzAD2ucw==
-  dependencies:
-    chalk "^4.1.0"
-    dayjs "^1.8.28"
-    debug "^4.1.1"
-    envinfo "^7.5.1"
-    find-up "^4.1.0"
-    fs-extra "^9.0.1"
-    fuzzy "^0.1.3"
-    get-stdin "^8.0.0"
-    glob "^7.1.6"
-    inquirer "^7.1.0"
-    json-colorizer "^2.2.2"
-    json-stringify-pretty-compact "^2.0.0"
-    lodash "^4.17.15"
-    node-cache "^5.1.1"
-    node-object-hash "^2.0.0"
-    shelljs "^0.8.4"
-    table "^5.4.6"
-    update-notifier "^4.1.0"
-    yaml "^1.10.0"
-    yargs "^15.3.1"
-
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -1264,52 +1212,52 @@
   resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.0.0.tgz#365f1bf936aeaddd0856fc41aa1d6f82d88ee5b3"
   integrity sha512-WAy5txG7aFX8Vw3sloEKp5p/t/Xt8jD3GRD9DacnFv6Vo8ubudAsRTXgxpQwU0mpzY/H8U4db3roDuCMjShBmw==
 
-"@typescript-eslint/eslint-plugin@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-3.6.1.tgz#5ced8fd2087fbb83a76973dea4a0d39d9cb4a642"
-  integrity sha512-06lfjo76naNeOMDl+mWG9Fh/a0UHKLGhin+mGaIw72FUMbMGBkdi/FEJmgEDzh4eE73KIYzHWvOCYJ0ak7nrJQ==
+"@typescript-eslint/eslint-plugin@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-3.7.0.tgz?cache=0&sync_timestamp=1595265394959&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-3.7.0.tgz#0f91aa3c83d019591719e597fbdb73a59595a263"
+  integrity sha1-D5GqPIPQGVkXGeWX+9tzpZWVomM=
   dependencies:
-    "@typescript-eslint/experimental-utils" "3.6.1"
+    "@typescript-eslint/experimental-utils" "3.7.0"
     debug "^4.1.1"
     functional-red-black-tree "^1.0.1"
     regexpp "^3.0.0"
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@typescript-eslint/experimental-utils@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-3.6.1.tgz#b5a2738ebbceb3fa90c5b07d50bb1225403c4a54"
-  integrity sha512-oS+hihzQE5M84ewXrTlVx7eTgc52eu+sVmG7ayLfOhyZmJ8Unvf3osyFQNADHP26yoThFfbxcibbO0d2FjnYhg==
+"@typescript-eslint/experimental-utils@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/experimental-utils/download/@typescript-eslint/experimental-utils-3.7.0.tgz?cache=0&sync_timestamp=1595267159235&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-3.7.0.tgz#0ee21f6c48b2b30c63211da23827725078d5169a"
+  integrity sha1-DuIfbEiyswxjIR2iOCdyUHjVFpo=
   dependencies:
     "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/types" "3.6.1"
-    "@typescript-eslint/typescript-estree" "3.6.1"
+    "@typescript-eslint/types" "3.7.0"
+    "@typescript-eslint/typescript-estree" "3.7.0"
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-3.6.1.tgz#216e8adf4ee9c629f77c985476a2ea07fb80e1dc"
-  integrity sha512-SLihQU8RMe77YJ/jGTqOt0lMq7k3hlPVfp7v/cxMnXA9T0bQYoMDfTsNgHXpwSJM1Iq2aAJ8WqekxUwGv5F67Q==
+"@typescript-eslint/parser@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-3.7.0.tgz?cache=0&sync_timestamp=1595265394013&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-3.7.0.tgz#3e9cd9df9ea644536feb6e5acdb8279ecff96ce9"
+  integrity sha1-PpzZ356mRFNv625azbgnns/5bOk=
   dependencies:
     "@types/eslint-visitor-keys" "^1.0.0"
-    "@typescript-eslint/experimental-utils" "3.6.1"
-    "@typescript-eslint/types" "3.6.1"
-    "@typescript-eslint/typescript-estree" "3.6.1"
+    "@typescript-eslint/experimental-utils" "3.7.0"
+    "@typescript-eslint/types" "3.7.0"
+    "@typescript-eslint/typescript-estree" "3.7.0"
     eslint-visitor-keys "^1.1.0"
 
-"@typescript-eslint/types@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-3.6.1.tgz#87600fe79a1874235d3cc1cf5c7e1a12eea69eee"
-  integrity sha512-NPxd5yXG63gx57WDTW1rp0cF3XlNuuFFB5G+Kc48zZ+51ZnQn9yjDEsjTPQ+aWM+V+Z0I4kuTFKjKvgcT1F7xQ==
+"@typescript-eslint/types@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/types/download/@typescript-eslint/types-3.7.0.tgz#09897fab0cb95479c01166b10b2c03c224821077"
+  integrity sha1-CYl/qwy5VHnAEWaxCywDwiSCEHc=
 
-"@typescript-eslint/typescript-estree@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-3.6.1.tgz#a5c91fcc5497cce7922ff86bc37d5e5891dcdefa"
-  integrity sha512-G4XRe/ZbCZkL1fy09DPN3U0mR6SayIv1zSeBNquRFRk7CnVLgkC2ZPj8llEMJg5Y8dJ3T76SvTGtceytniaztQ==
+"@typescript-eslint/typescript-estree@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-3.7.0.tgz?cache=0&sync_timestamp=1595267158113&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-3.7.0.tgz#66872e6da120caa4b64e6b4ca5c8702afc74738d"
+  integrity sha1-ZocubaEgyqS2TmtMpchwKvx0c40=
   dependencies:
-    "@typescript-eslint/types" "3.6.1"
-    "@typescript-eslint/visitor-keys" "3.6.1"
+    "@typescript-eslint/types" "3.7.0"
+    "@typescript-eslint/visitor-keys" "3.7.0"
     debug "^4.1.1"
     glob "^7.1.6"
     is-glob "^4.0.1"
@@ -1317,10 +1265,10 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@typescript-eslint/visitor-keys@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-3.6.1.tgz#5c57a7772f4dd623cfeacc219303e7d46f963b37"
-  integrity sha512-qC8Olwz5ZyMTZrh4Wl3K4U6tfms0R/mzU4/5W3XeUZptVraGVmbptJbn6h2Ey6Rb3hOs3zWoAUebZk8t47KGiQ==
+"@typescript-eslint/visitor-keys@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/visitor-keys/download/@typescript-eslint/visitor-keys-3.7.0.tgz#ac0417d382a136e4571a0b0dcfe52088cb628177"
+  integrity sha1-rAQX04KhNuRXGgsNz+UgiMtigXc=
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
@@ -1943,19 +1891,19 @@ apidoc-core@^0.11.1:
     lodash "~4.17.15"
     semver "~6.3.0"
 
-apidoc@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/apidoc/-/apidoc-0.23.0.tgz#469764ced8992bcf6b7734eb51539244fb3a3d1c"
-  integrity sha512-bn2QNaqyyL5ihRUlBBqwffElJg+hAgxAWPDdjJiLxDJ66Jiw+jf8uucFLYC9XHFqjdM7YTqLluM2PPshrqzObg==
+apidoc@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.npm.taobao.org/apidoc/download/apidoc-0.24.0.tgz?cache=0&sync_timestamp=1595231118582&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fapidoc%2Fdownload%2Fapidoc-0.24.0.tgz#b0f88e60cae4f7a95cec29dcfa42e7671a3315fe"
+  integrity sha1-sPiOYMrk96lc7Cnc+kLnZxozFf4=
   dependencies:
     apidoc-core "^0.11.1"
     commander "^2.20.0"
     fs-extra "^8.1.0"
     handlebars "^4.7.6"
-    lodash "^4.17.15"
+    lodash "^4.17.19"
     markdown-it "^10.0.0"
-    nodemon "^2.0.3"
-    winston "^3.2.1"
+    nodemon "^2.0.4"
+    winston "^3.3.3"
 
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
@@ -7570,10 +7518,10 @@ node-sqlparser@^1.0.4:
   resolved "https://registry.yarnpkg.com/node-sqlparser/-/node-sqlparser-1.0.4.tgz#1b97bef90f5ad7276de709c5c0bd3f47582049a7"
   integrity sha512-aw3UIkk+4J6e55x7JH03ZbrYBsfyoMQaCHukfOXgSGqFgc0UG/zM7njxk3y1bc5DXmmtHXlm9yLCacc+qaMBmg==
 
-nodemon@^2.0.3:
+nodemon@^2.0.4:
   version "2.0.4"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.4.tgz#55b09319eb488d6394aa9818148c0c2d1c04c416"
-  integrity sha512-Ltced+hIfTmaS28Zjv1BM552oQ3dbwPqI4+zI0SLgq+wpJhSyqgYude/aZa/3i31VCQWMfXJVxvu86abcam3uQ==
+  resolved "https://registry.npm.taobao.org/nodemon/download/nodemon-2.0.4.tgz#55b09319eb488d6394aa9818148c0c2d1c04c416"
+  integrity sha1-VbCTGetIjWOUqpgYFIwMLRwExBY=
   dependencies:
     chokidar "^3.2.2"
     debug "^3.2.6"
@@ -9739,12 +9687,12 @@ semo-plugin-hook@1.4.2:
   dependencies:
     "@semo/core" "^1.4.2"
 
-semo-plugin-redis@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/semo-plugin-redis/download/semo-plugin-redis-1.0.2.tgz#84b45789e5cc9da9219429f37bd4aef3543f2805"
-  integrity sha1-hLRXieXMnakhlCnze9Su81Q/KAU=
+semo-plugin-redis@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/semo-plugin-redis/download/semo-plugin-redis-1.0.3.tgz#355cac577f61e185bc83f6b5ab7287cb26ffb178"
+  integrity sha1-NVysV39h4YW8g/a1q3KHyyb/sXg=
   dependencies:
-    "@semo/core" "^1.0.3"
+    "@semo/core" "^1.4.2"
     ioredis "^4.17.3"
 
 semo-plugin-script@1.4.2:
@@ -9754,12 +9702,12 @@ semo-plugin-script@1.4.2:
   dependencies:
     "@semo/core" "^1.4.2"
 
-semo-plugin-sequelize@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/semo-plugin-sequelize/-/semo-plugin-sequelize-2.0.0.tgz#a7b11675777d2a9e34d65b6a9bfff16c93331a53"
-  integrity sha512-qMYfzJrofhSVFoucDl3vAr19nzg259mmdH3ITEXZvjsVzhWiRLuxoUfrt1yAAL12LpCl0F/y7qPkIDOp8QvUZg==
+semo-plugin-sequelize@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/semo-plugin-sequelize/download/semo-plugin-sequelize-2.0.1.tgz#126f9f6fd10b0fb1cc7de89604f9f9c746879d4e"
+  integrity sha1-Em+fb9ELD7HMfeiWBPn5x0aHnU4=
   dependencies:
-    "@semo/core" "^1.1.0"
+    "@semo/core" "^1.4.2"
     js-beautify "^1.11.0"
     mysql2 "^2.1.0"
     node-sqlparser "^1.0.4"
@@ -11751,10 +11699,10 @@ winston-transport@^4.4.0:
     readable-stream "^2.3.7"
     triple-beam "^1.2.0"
 
-winston@^3.2.1:
+winston@^3.3.3:
   version "3.3.3"
-  resolved "https://registry.yarnpkg.com/winston/-/winston-3.3.3.tgz#ae6172042cafb29786afa3d09c8ff833ab7c9170"
-  integrity sha512-oEXTISQnC8VlSAKf1KYSSd7J6IWuRPQqDdo8eoRNaYKLvwSb5+79Z3Yi1lrl6KDpU6/VWaxpakDAtb1oQ4n9aw==
+  resolved "https://registry.npm.taobao.org/winston/download/winston-3.3.3.tgz#ae6172042cafb29786afa3d09c8ff833ab7c9170"
+  integrity sha1-rmFyBCyvspeGr6PQnI/4M6t8kXA=
   dependencies:
     "@dabh/diagnostics" "^2.0.2"
     async "^3.1.0"
