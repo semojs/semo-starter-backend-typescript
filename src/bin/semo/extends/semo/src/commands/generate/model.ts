@@ -44,7 +44,7 @@ export const handler = function (argv) {
 
   const code = `import { Model } from 'sequelize'
 
-export = class ${modelName} extends Model {
+class ${modelName} extends Model {
   name: string
   static customModelStaticMethod = () => {
     console.log('I am a custom static method!')
@@ -64,6 +64,8 @@ export = class ${modelName} extends Model {
     console.log('I will do model relations association!')
   }
 }
+
+export default ${modelName}
 `
   if (!fs.existsSync(modelFile)) {
     fs.writeFileSync(modelFile, code)

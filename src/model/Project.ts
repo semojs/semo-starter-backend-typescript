@@ -25,7 +25,6 @@ class Project extends Model {
    * 示例虚拟变量方法
    */
   get customVirtualProperty () {
-    console.log('I am a custom virtual property!')
     return 'customVirtualProperty'
   }
 
@@ -41,8 +40,8 @@ class Project extends Model {
    *
    * **必须是静态方法**
    */
-  static associate () {
-    console.log('I will do model relations association!')
+  static associate ({ User: User}) {
+    // Project.belongsTo(User)
   }
 }
 
