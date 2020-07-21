@@ -1,6 +1,6 @@
 import { Utils } from '@semo/core'
 import errors from '../exception/errors'
-import { ApplicationConfig } from '../decorator/ConfigDecorator'
+import { Config } from '../decorator/ConfigDecorator'
 
 const { ERROR_UNKNOWN } = errors
 
@@ -12,7 +12,7 @@ const { ERROR_UNKNOWN } = errors
  */
 class Exception extends Error {
 
-  @ApplicationConfig('serviceName', 'app')
+  @Config('serviceName', 'app')
   serviceName
 
   /**

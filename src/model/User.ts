@@ -1,6 +1,6 @@
 import { Model } from 'sequelize'
 
-class User extends Model {
+export class User extends Model {
   name: string
   static customModelStaticMethod = () => {
     console.log('I am a custom static method!')
@@ -21,4 +21,3 @@ class User extends Model {
   }
 }
 
-export default User

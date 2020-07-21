@@ -1,16 +1,16 @@
-import init from '../../../init'
-
 import path from 'path'
 import { Utils } from '@semo/core'
-import { redis } from 'semo-plugin-redis'
 import { Container } from 'typedi'
+
+import { Application } from '../../../Application';
 
 /**
  * Implementation of hook_repl
  * 为 REPL 注入初始化环境
  */
 export const hook_repl: any = new Utils.Hook('semo', async (data, options: any) => {
-  await init()
+  const app = new Application()
+  await app.init()
 
   // 加载所有的 Service 到 REPL
   const services = {}
@@ -40,9 +40,14 @@ export const hook_repl: any = new Utils.Hook('semo', async (data, options: any) 
   })
 
   const databaseInstance:any = Container.get('databaseInstance')
-
-  const appConfig = Utils.config('$app') || {}
-  return { models: databaseInstance.models, services, config: appConfig, database: Container.get('databaseInstance') }
+  const config = Container.get('config')
+  const api = Container.get('api')
+  return {
+    models: databaseInstance.models,
+    services,
+    config,
+    api,
+    database: Container.get('databaseInstance') }
 
 })
 
@@ -59,11 +64,10 @@ export const hook_cron_setup: any = new Utils.Hook('semo', async () => {
  * 为计划任务进行统一初始化
  */
 export const hook_cron_redis_lock: any = new Utils.Hook('semo', async () => {
-  const appConfig = Utils.config('$app') || {}
   let lock, unlock
 
-  if (appConfig.redis) {
-    const redisInstance = await redis.load('redis')
+  if (Container.has('redisInstance')) {
+    const redisInstance: any = Container.get('redisInstance')
 
     // Redis锁，加锁
     lock = async function(redisKey: string, redisValue: any, timeout: number) {
