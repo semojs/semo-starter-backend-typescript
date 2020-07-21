@@ -68,17 +68,24 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/apibootlet.html" class="tsd-kind-icon">Api<wbr>Bootlet</a></li>
+								<li class="tsd-kind-class"><a href="classes/appbootlet.html" class="tsd-kind-icon">App<wbr>Bootlet</a></li>
+								<li class="tsd-kind-class"><a href="classes/application.html" class="tsd-kind-icon">Application</a></li>
+								<li class="tsd-kind-class"><a href="classes/configbootlet.html" class="tsd-kind-icon">Config<wbr>Bootlet</a></li>
+								<li class="tsd-kind-class"><a href="classes/dbbootlet.html" class="tsd-kind-icon">Db<wbr>Bootlet</a></li>
 								<li class="tsd-kind-class"><a href="classes/demoservice.html" class="tsd-kind-icon">Demo<wbr>Service</a></li>
 								<li class="tsd-kind-class"><a href="classes/exception.html" class="tsd-kind-icon">Exception</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/project.html" class="tsd-kind-icon">Project</a></li>
 								<li class="tsd-kind-class"><a href="classes/projectinfovalidation.html" class="tsd-kind-icon">Project<wbr>Info<wbr>Validation</a></li>
 								<li class="tsd-kind-class"><a href="classes/projectservice.html" class="tsd-kind-icon">Project<wbr>Service</a></li>
 								<li class="tsd-kind-class"><a href="classes/responseformmater.html" class="tsd-kind-icon">Response<wbr>Formmater</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/user.html" class="tsd-kind-icon">User</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/bootlet.html" class="tsd-kind-icon">Bootlet</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/demoserviceinterface.html" class="tsd-kind-icon">Demo<wbr>Service<wbr>Interface</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/projectserviceinterface.html" class="tsd-kind-icon">Project<wbr>Service<wbr>Interface</a></li>
 							</ul>
@@ -88,12 +95,12 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable"><a href="index.html#error_bad_params" class="tsd-kind-icon">ERROR_<wbr>BAD_<wbr>PARAMS</a></li>
 								<li class="tsd-kind-variable"><a href="index.html#error_unknown" class="tsd-kind-icon">ERROR_<wbr>UNKNOWN</a></li>
+								<li class="tsd-kind-variable"><a href="index.html#bootlets" class="tsd-kind-icon">bootlets</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="index.html#applicationconfig" class="tsd-kind-icon">Application<wbr>Config</a></li>
 								<li class="tsd-kind-function"><a href="index.html#config" class="tsd-kind-icon">Config</a></li>
 								<li class="tsd-kind-function"><a href="index.html#dbinject" class="tsd-kind-icon">Db<wbr>Inject</a></li>
 								<li class="tsd-kind-function"><a href="index.html#modelinject" class="tsd-kind-icon">Model<wbr>Inject</a></li>
@@ -110,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">ERROR_<wbr>BAD_<wbr>PARAMS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/ec101d4/src/middleware/global/ResponseFormatter.ts#L7">src/middleware/global/ResponseFormatter.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/middleware/global/ResponseFormatter.ts#L7">src/middleware/global/ResponseFormatter.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,8 +127,18 @@
 					<div class="tsd-signature tsd-kind-icon">ERROR_<wbr>UNKNOWN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/ec101d4/src/exception/Exception.ts#L5">src/exception/Exception.ts:5</a></li>
-							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/ec101d4/src/middleware/global/ResponseFormatter.ts#L7">src/middleware/global/ResponseFormatter.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/exception/Exception.ts#L5">src/exception/Exception.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/middleware/global/ResponseFormatter.ts#L7">src/middleware/global/ResponseFormatter.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="bootlets" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> bootlets</h3>
+					<div class="tsd-signature tsd-kind-icon">bootlets<span class="tsd-signature-symbol">:</span> <a href="classes/configbootlet.html" class="tsd-signature-type">ConfigBootlet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [ConfigBootlet,DbBootlet,ApiBootlet,AppBootlet]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/config/app.ts#L7">src/config/app.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,52 +146,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="applicationconfig" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Application<wbr>Config</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">Application<wbr>Config<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/ec101d4/src/decorator/ConfigDecorator.ts#L9">src/decorator/ConfigDecorator.ts:9</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>注入应用配置</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;placeholder&quot;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>数据库标识</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> defaultValue: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = undefined</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="config" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Config</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">Config<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">Config<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/ec101d4/src/decorator/ConfigDecorator.ts#L23">src/decorator/ConfigDecorator.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/decorator/ConfigDecorator.ts#L9">src/decorator/ConfigDecorator.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -185,7 +166,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;placeholder&quot;</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> key: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = null</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>数据库标识</p>
@@ -210,7 +191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/ec101d4/src/decorator/DatabaseDecorator.ts#L9">src/decorator/DatabaseDecorator.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/decorator/DatabaseDecorator.ts#L9">src/decorator/DatabaseDecorator.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -232,7 +213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/ec101d4/src/decorator/DatabaseDecorator.ts#L23">src/decorator/DatabaseDecorator.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/decorator/DatabaseDecorator.ts#L23">src/decorator/DatabaseDecorator.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -272,6 +253,21 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
+						<a href="classes/apibootlet.html" class="tsd-kind-icon">Api<wbr>Bootlet</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/appbootlet.html" class="tsd-kind-icon">App<wbr>Bootlet</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/application.html" class="tsd-kind-icon">Application</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/configbootlet.html" class="tsd-kind-icon">Config<wbr>Bootlet</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/dbbootlet.html" class="tsd-kind-icon">Db<wbr>Bootlet</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/demoservice.html" class="tsd-kind-icon">Demo<wbr>Service</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -289,6 +285,12 @@
 					<li class=" tsd-kind-class">
 						<a href="classes/responseformmater.html" class="tsd-kind-icon">Response<wbr>Formmater</a>
 					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/user.html" class="tsd-kind-icon">User</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/bootlet.html" class="tsd-kind-icon">Bootlet</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/demoserviceinterface.html" class="tsd-kind-icon">Demo<wbr>Service<wbr>Interface</a>
 					</li>
@@ -301,8 +303,8 @@
 					<li class=" tsd-kind-variable">
 						<a href="index.html#error_unknown" class="tsd-kind-icon">ERROR_<wbr>UNKNOWN</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="index.html#applicationconfig" class="tsd-kind-icon">Application<wbr>Config</a>
+					<li class=" tsd-kind-variable">
+						<a href="index.html#bootlets" class="tsd-kind-icon">bootlets</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#config" class="tsd-kind-icon">Config</a>
@@ -338,6 +340,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
