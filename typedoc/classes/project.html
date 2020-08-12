@@ -341,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/model/Project.ts#L15">src/model/Project.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/e70da6f/src/model/Project.ts#L15">src/model/Project.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -523,7 +523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/model/Project.ts#L27">src/model/Project.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/e70da6f/src/model/Project.ts#L27">src/model/Project.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -692,7 +692,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/model/Project.ts#L34">src/model/Project.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/e70da6f/src/model/Project.ts#L34">src/model/Project.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1281,8 +1281,7 @@ instance.increment({ <span class="hljs-attr">answer</span>: <span class="hljs-nu
 									<p>Set is used to update values on the instance (the sequelize representation of the instance that is,
 										remember that nothing will be persisted before you actually call <code>save</code>). In its most basic form <code>set</code>
 										will update a value stored in the underlying <code>dataValues</code> object. However, if a custom setter function
-										is defined for the key, that function will be called instead. To bypass the setter, you can pass <code>raw:
-true</code> in the options object.</p>
+									is defined for the key, that function will be called instead. To bypass the setter, you can pass <code>raw: true</code> in the options object.</p>
 								</div>
 								<p>If set is called with an object, it will loop over the object, and call set recursively for each key,
 									value pair. If you set raw to true, the underlying dataValues will either be set directly to the object
@@ -2974,7 +2973,7 @@ true</code> in the options object.</p>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/model/Project.ts#L43">src/model/Project.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/e70da6f/src/model/Project.ts#L43">src/model/Project.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4876,7 +4875,7 @@ user.setProjects([p1, p2], {<span class="hljs-attr">started</span>: <span class=
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/446e28e/src/model/Project.ts#L20">src/model/Project.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/semojs/semo-starter-backend-typescript/blob/e70da6f/src/model/Project.ts#L20">src/model/Project.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5027,8 +5026,7 @@ Model.findAll({
   }
 })</code></pre>
 								<pre><code class="language-sql">WHERE attr1 &gt; 50 AND attr2 &lt;= 45 AND attr3 IN (1,2,3) AND attr4 != 5</code></pre>
-								<p>Possible options are: <code>[Op.ne], [Op.in], [Op.not], [Op.notIn], [Op.gte], [Op.gt], [Op.lte], [Op.lt], [Op.like], [Op.ilike]/[Op.iLike], [Op.notLike],
-[Op.notILike], &#39;..&#39;/[Op.between], &#39;!..&#39;/[Op.notBetween], &#39;&amp;&amp;&#39;/[Op.overlap], &#39;@&gt;&#39;/[Op.contains], &#39;&lt;@&#39;/[Op.contained]</code></p>
+								<p>Possible options are: <code>[Op.ne], [Op.in], [Op.not], [Op.notIn], [Op.gte], [Op.gt], [Op.lte], [Op.lt], [Op.like], [Op.ilike]/[Op.iLike], [Op.notLike], [Op.notILike], &#39;..&#39;/[Op.between], &#39;!..&#39;/[Op.notBetween], &#39;&amp;&amp;&#39;/[Op.overlap], &#39;@&gt;&#39;/[Op.contains], &#39;&lt;@&#39;/[Op.contained]</code></p>
 								<p><strong>Queries using OR</strong></p>
 								<pre><code class="language-js">Model.findAll({
   <span class="hljs-attr">where</span>: Sequelize.and(
