@@ -58,7 +58,6 @@ class Exception extends Error {
       errCode
     this.msg = errMsg
     this.status = status
-    delete this.message
   }
 }
 
