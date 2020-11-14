@@ -8,11 +8,16 @@ import { Model } from 'sequelize'
  *
  * **注意静态方法，实例方法和虚拟属性的区别**
  */
-class Project extends Model {
+class Project extends Model<Project> {
   /**
    * ID xxxx
    */
   id: number
+
+  /**
+   * 项目名称
+   */
+  name: string
 
   /**
    * 示例静态方法

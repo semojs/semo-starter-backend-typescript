@@ -8,3 +8,4 @@ config/migrationDb.json
 public
 /dist
 docs/.vuepress/public/api
+yarn-error.log

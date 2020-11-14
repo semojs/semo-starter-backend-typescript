@@ -2,7 +2,7 @@
 
 export = {
   up: function(queryInterface: any, Sequelize: any) {
-    return queryInterface.createTable('sm_User', {
+    return queryInterface.createTable('sm_user', {
       id: {
         autoIncrement: true,
         primaryKey: true,
@@ -24,6 +24,6 @@ export = {
   },
 
   down: function(queryInterface: any, Sequelize: any) {
-    return queryInterface.dropTable('sm_User');
+    return queryInterface.dropTable('sm_user');
   }
 };

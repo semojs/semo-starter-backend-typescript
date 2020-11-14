@@ -58,8 +58,13 @@ $plugin:
         prefix: 'semo:'
 
   sequelize:
-    defaultConnection: d9
+    defaultConnection: d3
     connection:
+      d3:
+        dialect: sqlite
+        storage: database.sqlite
+        prefix: sm_
+        raw: true
       d8:
         host: localhost
         port: 5432
