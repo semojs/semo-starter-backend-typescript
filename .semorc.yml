@@ -58,7 +58,6 @@ $plugin:
         prefix: 'semo:'
 
   sequelize:
-    defaultConnection: d3
     connection:
       d3:
         dialect: sqlite

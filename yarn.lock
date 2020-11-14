@@ -974,18 +974,18 @@
   dependencies:
     debug "^4.1.1"
 
-"@semo/cli@1.5.8":
-  version "1.5.8"
-  resolved "https://registry.npm.taobao.org/@semo/cli/download/@semo/cli-1.5.8.tgz#b7da4465e68d8f1c2b2c2fe1d62c227e369ba022"
-  integrity sha1-t9pEZeaNjxwrLC/h1iwifjaboCI=
+"@semo/cli@1.5.12":
+  version "1.5.12"
+  resolved "https://registry.npm.taobao.org/@semo/cli/download/@semo/cli-1.5.12.tgz#ee53923683e774a48209bf91cec3ba471c673a92"
+  integrity sha1-7lOSNoPndKSCCb+RzsO6RxxnOpI=
   dependencies:
-    "@semo/core" "^1.5.8"
+    "@semo/core" "^1.5.12"
     rimraf "^3.0.2"
 
-"@semo/core@1.5.8", "@semo/core@^1.5.8":
-  version "1.5.8"
-  resolved "https://registry.npm.taobao.org/@semo/core/download/@semo/core-1.5.8.tgz#fe2e90422ef740f156e1f30a259ca79a1b252774"
-  integrity sha1-/i6QQi73QPFW4fMKJZynmhslJ3Q=
+"@semo/core@1.5.12", "@semo/core@^1.5.12":
+  version "1.5.12"
+  resolved "https://registry.npm.taobao.org/@semo/core/download/@semo/core-1.5.12.tgz#9f0c62f4f52b6c244b490d5631f3607b2137bfcf"
+  integrity sha1-nwxi9PUrbCRLSQ1WMfNgeyE3v88=
   dependencies:
     chalk "^4.1.0"
     dayjs "^1.9.4"
@@ -1061,32 +1061,6 @@
     update-notifier "^4.1.0"
     yaml "^1.10.0"
     yargs "^15.3.1"
-
-"@semo/core@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@semo/core/-/core-1.5.1.tgz#96adf413d179a1ac93c0787da38f29da7205b372"
-  integrity sha512-mgZM+0SzbFqApXq2+jF2Il44ephyU3bpgI2t3k3rbePvSacFQq82n69/fqXaqSytisrMp+GYHoEPr2QEbvsoTg==
-  dependencies:
-    chalk "^4.1.0"
-    dayjs "^1.9.4"
-    debug "^4.2.0"
-    envinfo "^7.7.3"
-    find-up "^5.0.0"
-    fs-extra "^9.0.1"
-    fuzzy "^0.1.3"
-    get-stdin "^8.0.0"
-    glob "^7.1.6"
-    inquirer "^7.3.3"
-    json-colorizer "^2.2.2"
-    json-stringify-pretty-compact "^2.0.0"
-    lodash "^4.17.20"
-    node-cache "^5.1.2"
-    object-hash "^2.0.3"
-    shelljs "^0.8.4"
-    table "^6.0.3"
-    update-notifier "^5.0.0"
-    yaml "^1.10.0"
-    yargs "^16.1.0"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -8579,7 +8553,7 @@ pg-types@^2.1.0:
     postgres-date "~1.0.4"
     postgres-interval "^1.1.0"
 
-pg@^8.4.2:
+pg@^8.5.1:
   version "8.5.1"
   resolved "https://registry.npm.taobao.org/pg/download/pg-8.5.1.tgz#34dcb15f6db4a29c702bf5031ef2e1e25a06a120"
   integrity sha1-NNyxX220opxwK/UDHvLh4loGoSA=
@@ -10076,12 +10050,12 @@ semo-plugin-api@1.0.3:
     querystring "^0.2.0"
     socks-proxy-agent "^5.0.0"
 
-semo-plugin-application@1.5.8:
-  version "1.5.8"
-  resolved "https://registry.npm.taobao.org/semo-plugin-application/download/semo-plugin-application-1.5.8.tgz#3749f41c1f64321dcade4180e5c16b66befcc484"
-  integrity sha1-N0n0HB9kMh3K3kGA5cFrZr78xIQ=
+semo-plugin-application@1.5.12:
+  version "1.5.12"
+  resolved "https://registry.npm.taobao.org/semo-plugin-application/download/semo-plugin-application-1.5.12.tgz#81787d3de969e42df6e7d85a4833035fa8ee1153"
+  integrity sha1-gXh9Pelp5C3259haSDMDX6juEVM=
   dependencies:
-    "@semo/core" "^1.5.8"
+    "@semo/core" "^1.5.12"
 
 semo-plugin-cron@1.0.0:
   version "1.0.0"
@@ -10091,12 +10065,12 @@ semo-plugin-cron@1.0.0:
     "@semo/core" "^0.6.7"
     node-cron "^2.0.3"
 
-semo-plugin-hook@1.5.8:
-  version "1.5.8"
-  resolved "https://registry.npm.taobao.org/semo-plugin-hook/download/semo-plugin-hook-1.5.8.tgz#46d9b9703da34833e0394766a4d73144f10b91c7"
-  integrity sha1-Rtm5cD2jSDPgOUdmpNcxRPELkcc=
+semo-plugin-hook@1.5.12:
+  version "1.5.12"
+  resolved "https://registry.npm.taobao.org/semo-plugin-hook/download/semo-plugin-hook-1.5.12.tgz#b82a39214a666da6c0c689fea29a5d6645db3b48"
+  integrity sha1-uCo5IUpmbabAxon+oppdZkXbO0g=
   dependencies:
-    "@semo/core" "^1.5.8"
+    "@semo/core" "^1.5.12"
 
 semo-plugin-redis@1.0.3:
   version "1.0.3"
@@ -10106,23 +10080,23 @@ semo-plugin-redis@1.0.3:
     "@semo/core" "^1.4.2"
     ioredis "^4.17.3"
 
-semo-plugin-script@1.5.8:
-  version "1.5.8"
-  resolved "https://registry.npm.taobao.org/semo-plugin-script/download/semo-plugin-script-1.5.8.tgz#8403c5e42f64b0cfb2cf004ca4fd0b9b32e94586"
-  integrity sha1-hAPF5C9ksM+yzwBMpP0LmzLpRYY=
+semo-plugin-script@1.5.12:
+  version "1.5.12"
+  resolved "https://registry.npm.taobao.org/semo-plugin-script/download/semo-plugin-script-1.5.12.tgz#b1755019ff7b92633968e62b74892992ab57f378"
+  integrity sha1-sXVQGf97kmM5aOYrdIkpkqtX83g=
   dependencies:
-    "@semo/core" "^1.5.8"
+    "@semo/core" "^1.5.12"
 
-semo-plugin-sequelize@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.npm.taobao.org/semo-plugin-sequelize/download/semo-plugin-sequelize-2.0.8.tgz#33c8b2d943a0cf9b6719c2452b7bbb5e8e3c590d"
-  integrity sha1-M8iy2UOgz5tnGcJFK3u7Xo48WQ0=
+semo-plugin-sequelize@2.0.11:
+  version "2.0.11"
+  resolved "https://registry.npm.taobao.org/semo-plugin-sequelize/download/semo-plugin-sequelize-2.0.11.tgz#cd6aa8189095586eaf299e3f3d03343b07a897ae"
+  integrity sha1-zWqoGJCVWG6vKZ4/PQM0Oweol64=
   dependencies:
-    "@semo/core" "^1.5.1"
+    "@semo/core" "^1.5.12"
     js-beautify "^1.13.0"
     mysql2 "^2.2.5"
     node-sqlparser "^1.0.4"
-    pg "^8.4.2"
+    pg "^8.5.1"
     pg-hstore "^2.3.3"
     sequelize "^6.3.5"
     sqlite3 "^5.0.0"
