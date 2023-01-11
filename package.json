@@ -30,7 +30,7 @@
     "@semo/cli": "1.5.12",
     "@semo/core": "1.5.12",
     "class-transformer": "0.3.1",
-    "class-validator": "0.12.2",
+    "class-validator": "0.14.0",
     "kcors": "^2.2.2",
     "koa": "2.13.0",
     "koa-bodyparser": "^4.3.0",
